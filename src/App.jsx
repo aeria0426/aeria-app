@@ -40,9 +40,9 @@ const LANGUAGES = {
     score_words: ["Déconseillé","Passable","Très bien","Excellent"],
     partner_label: "PARTENAIRE",
     partners: [
-      { text: "🏨 Hôtels & gîtes en Provence — Réservez au soleil", cta: "Voir les offres", color: "#1E3A5F" },
+      { text: "🏨 Hôtels & hébergements — Réservez au soleil", cta: "Voir les offres", color: "#1E3A5F" },
       { text: "🚗 Location de voiture — À partir de 29€/jour", cta: "Comparer", color: "#14532D" },
-      { text: "🍽️ Restaurants du terroir près de chez vous", cta: "Découvrir", color: "#7C2D12" },
+      { text: "🍽️ Restaurants près de chez vous", cta: "Découvrir", color: "#7C2D12" },
     ],
     how_title: "Comment ça marche ?",
     how_desc: "Entrez votre ville ou activez le GPS, choisissez le rayon, et découvrez où le soleil vous attend !",
@@ -866,14 +866,14 @@ export default function App() {
               </div>
             )}
           </div>
-          <button style={S.locBtn} className="loc-btn" onClick={useLocation} disabled={loading}>
+          <button style={S.locBtn} className="loc-btn" onClick={()=>{console.log("[Aeria] GPS button clicked");useLocation();}}>
             <Navigation size={18}/> {L.gps_btn}
           </button>
           <div style={{marginTop:20}}>
             <div style={S.sectionTitle}>🚗 {L.radius_label}</div>
             <div style={S.radioBtns}>
               {radiusOptions.map(r=>(
-                <button key={r} style={{...S.radioBtnBase,background:radius===r?"#533483":"#F9FAFB",color:radius===r?"#fff":"#374151",borderColor:radius===r?"#533483":"#E5E7EB"}} onClick={()=>setRadius(r)}>
+                <button key={r} style={{...S.radioBtnBase,background:radius===r?"#533483":"#F9FAFB",color:radius===r?"#fff":"#374151",borderColor:radius===r?"#533483":"#E5E7EB"}} onClick={()=>{console.log("[Aeria] Radius clicked:",r);setRadius(r);}}>
                   {r} {L.radius_unit}
                 </button>
               ))}
