@@ -15,7 +15,7 @@ const LANGUAGES = {
     slogan: "La vie est trop belle pour rester sous la pluie.",
     tagline: "Trouvez le beau temps près de chez vous",
     hero_title: "Il pleut chez vous ?",
-    hero_sub: "Le soleil est peut-être à 20 minutes d'ici.",
+    hero_sub: "Le soleil est peut-être à quelques minutes d'ici.",
     hero_desc: "Aéria analyse la météo autour de vous en temps réel et vous guide vers le beau temps le plus proche.",
     search_placeholder: "Entrez votre ville ou adresse…",
     search_btn: "Chercher",
@@ -62,7 +62,7 @@ const LANGUAGES = {
     slogan: "Because life's too short to spend indoors when sunshine is just around the corner.",
     tagline: "Find sunny weather near you",
     hero_title: "Raining outside?",
-    hero_sub: "Blue skies might be just 20 minutes away.",
+    hero_sub: "Blue skies might be just minutes away.",
     hero_desc: "Aéria scans the weather around you in real time and navigates you straight to the nearest sunshine.",
     search_placeholder: "Enter your city or address…",
     search_btn: "Search",
@@ -109,7 +109,7 @@ const LANGUAGES = {
     slogan: "Schlechtes Wetter gibt es nicht — nur den falschen Ort.",
     tagline: "Finden Sie gutes Wetter in Ihrer Nähe",
     hero_title: "Regnet es bei Ihnen?",
-    hero_sub: "Die Sonne scheint vielleicht nur 20 Minuten entfernt.",
+    hero_sub: "Die Sonne scheint vielleicht nur wenige Minuten entfernt.",
     hero_desc: "Aéria analysiert das Wetter um Sie herum in Echtzeit und führt Sie direkt zum nächsten Sonnenschein.",
     search_placeholder: "Stadt oder Adresse eingeben…",
     search_btn: "Suchen",
@@ -156,7 +156,7 @@ const LANGUAGES = {
     slogan: "El sol no desaparece. Solo cambia de dirección. Síguelo.",
     tagline: "Encuentra buen tiempo cerca de ti",
     hero_title: "¿Llueve en tu ciudad?",
-    hero_sub: "El sol puede estar a solo 20 minutos de distancia.",
+    hero_sub: "El sol puede estar a solo unos minutos de distancia.",
     hero_desc: "Aéria analiza el tiempo a tu alrededor en tiempo real y te guía hacia el sol más cercano.",
     search_placeholder: "Introduce tu ciudad o dirección…",
     search_btn: "Buscar",
@@ -203,7 +203,7 @@ const LANGUAGES = {
     slogan: "O sol nunca some. Ele só te espera um pouco mais longe.",
     tagline: "Encontre bom tempo perto de você",
     hero_title: "Está chovendo aí?",
-    hero_sub: "O sol pode estar a apenas 20 minutos de você.",
+    hero_sub: "O sol pode estar a apenas alguns minutos de você.",
     hero_desc: "Aéria analisa o tempo ao seu redor em tempo real e te leva direto para o sol mais próximo.",
     search_placeholder: "Digite sua cidade ou endereço…",
     search_btn: "Buscar",
@@ -250,7 +250,7 @@ const LANGUAGES = {
     slogan: "La dolce vita non aspetta la pioggia. Il sole è già lì fuori.",
     tagline: "Trova il bel tempo vicino a te",
     hero_title: "Piove da te?",
-    hero_sub: "Il sole potrebbe essere a soli 20 minuti di distanza.",
+    hero_sub: "Il sole potrebbe essere a pochi minuti di distanza.",
     hero_desc: "Aéria analizza il meteo intorno a te in tempo reale e ti guida verso il sole più vicino.",
     search_placeholder: "Inserisci la tua città o indirizzo…",
     search_btn: "Cerca",
@@ -297,7 +297,7 @@ const LANGUAGES = {
     slogan: "Regen? Prima. Maar twintig minuten rijden en het is droog.",
     tagline: "Vind mooi weer bij jou in de buurt",
     hero_title: "Regent het bij jou?",
-    hero_sub: "De zon schijnt misschien al na 20 minuten rijden.",
+    hero_sub: "De zon schijnt misschien al na enkele minuten rijden.",
     hero_desc: "Aéria scant het weer om je heen in realtime en navigeert je naar het dichtstbijzijnde zonnige plekje.",
     search_placeholder: "Voer je stad of adres in…",
     search_btn: "Zoeken",
@@ -344,7 +344,7 @@ const LANGUAGES = {
     slogan: "雨の日でも、20分先には青空がある。",
     tagline: "近くの晴れ間を見つけよう",
     hero_title: "今、雨が降っていますか？",
-    hero_sub: "もしかしたら、20分先には晴れているかもしれません。",
+    hero_sub: "もしかしたら、数分先には晴れているかもしれません。",
     hero_desc: "Aériaはリアルタイムで周辺の天気を分析し、最寄りの晴れスポットへ案内します。",
     search_placeholder: "都市または住所を入力…",
     search_btn: "検索",
@@ -391,7 +391,7 @@ const LANGUAGES = {
     slogan: "비 오는 날도, 20분이면 맑은 하늘 아래에 있을 수 있어요.",
     tagline: "가까운 맑은 날씨를 찾아보세요",
     hero_title: "지금 비가 오나요?",
-    hero_sub: "20분 거리에 햇빛이 있을지도 모릅니다.",
+    hero_sub: "몇 분 거리에 햇빛이 있을지도 모릅니다.",
     hero_desc: "Aéria는 실시간으로 주변 날씨를 분석하여 가장 가까운 맑은 장소로 안내합니다.",
     search_placeholder: "도시 또는 주소를 입력하세요…",
     search_btn: "검색",
@@ -438,7 +438,7 @@ const LANGUAGES = {
     slogan: "बारिश रुकने का इंतज़ार क्यों? धूप तो 20 मिनट दूर है।",
     tagline: "अपने पास अच्छा मौसम खोजें",
     hero_title: "क्या आपके यहाँ बारिश हो रही है?",
-    hero_sub: "शायद 20 मिनट की दूरी पर धूप खिली हो।",
+    hero_sub: "शायद कुछ मिनट की दूरी पर धूप खिली हो।",
     hero_desc: "Aéria आपके आस-पास का मौसम रियल-टाइम में स्कैन करता है और सबसे नज़दीकी धूप वाली जगह तक पहुँचाता है।",
     search_placeholder: "अपना शहर या पता दर्ज करें…",
     search_btn: "खोजें",
@@ -485,7 +485,7 @@ const LANGUAGES = {
     slogan: "المطر لا يمنع المغامرة. الشمس تنتظرك على بُعد عشرين دقيقة.",
     tagline: "اعثر على طقس جميل بالقرب منك",
     hero_title: "هل تمطر عندك الآن؟",
-    hero_sub: "ربما الشمس تنتظرك على بُعد 20 دقيقة فقط.",
+    hero_sub: "ربما الشمس تنتظرك على بُعد بضع دقائق فقط.",
     hero_desc: "يحلل Aéria الطقس حولك في الوقت الفعلي ويرشدك إلى أقرب منطقة مشمسة.",
     search_placeholder: "أدخل مدينتك أو عنوانك…",
     search_btn: "بحث",
@@ -532,7 +532,7 @@ const LANGUAGES = {
     slogan: "Hujan bukan halangan. Matahari menunggu 20 menit dari sini.",
     tagline: "Temukan cuaca cerah di dekatmu",
     hero_title: "Sedang hujan di tempatmu?",
-    hero_sub: "Mungkin ada sinar matahari hanya 20 menit dari sini.",
+    hero_sub: "Mungkin ada sinar matahari hanya beberapa menit dari sini.",
     hero_desc: "Aéria memindai cuaca di sekitarmu secara real-time dan memandu kamu ke tempat cerah terdekat.",
     search_placeholder: "Masukkan kota atau alamatmu…",
     search_btn: "Cari",
@@ -773,7 +773,7 @@ export default function App() {
     app:{fontFamily:"'DM Sans',sans-serif",background:"#F0F4F8",minHeight:"100vh",direction:isRTL?"rtl":"ltr"},
     header:{background:"linear-gradient(135deg,#1a1a2e 0%,#16213e 40%,#0f3460 70%,#533483 100%)",padding:"28px 20px 36px",textAlign:"center"},
     logo:{fontSize:42,fontWeight:800,color:"#fff",letterSpacing:"-1px",marginBottom:4},
-    tagline:{fontSize:15,color:"rgba(255,255,255,0.82)",marginBottom:0},
+    tagline:{fontSize:18,color:"rgba(255,255,255,0.92)",fontWeight:500,marginBottom:0,letterSpacing:"0.2px"},
     main:{maxWidth:640,margin:"0 auto",padding:"0 16px 40px"},
     card:{background:"#fff",borderRadius:20,padding:24,marginBottom:16,boxShadow:"0 2px 16px rgba(0,0,0,0.07)"},
     inputWrap:{position:"relative",marginBottom:12},
@@ -818,29 +818,98 @@ export default function App() {
 
         {/* Logo Aéria boussole */}
         <div style={{display:"flex",flexDirection:"column",alignItems:"center",gap:10,marginBottom:6}}>
-          <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+          <svg width="240" height="240" viewBox="0 0 500 500" fill="none" style={{filter:"drop-shadow(0 0 40px rgba(196,181,253,0.15))"}}>
             <defs>
-              <radialGradient id="bgG" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="#7c3aed" stopOpacity="0.25"/><stop offset="100%" stopColor="#1a1a2e" stopOpacity="0"/></radialGradient>
-              <linearGradient id="ndN" x1="40" y1="12" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop offset="0%" stopColor="#ffffff"/><stop offset="100%" stopColor="#c4b5fd"/></linearGradient>
-              <linearGradient id="ndS" x1="40" y1="40" x2="40" y2="68" gradientUnits="userSpaceOnUse"><stop offset="0%" stopColor="#7c3aed"/><stop offset="100%" stopColor="#4c1d95"/></linearGradient>
-              <filter id="gw"><feGaussianBlur stdDeviation="2.5" result="cb"/><feMerge><feMergeNode in="cb"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              <linearGradient id="bvLight" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stopColor="#ffffff"/><stop offset="100%" stopColor="#c4b5fd"/></linearGradient>
+              <linearGradient id="bvDark" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stopColor="#8b7fb8" stopOpacity="0.95"/><stop offset="100%" stopColor="#3d2563" stopOpacity="0.9"/></linearGradient>
+              <linearGradient id="bhLight" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#ffffff"/><stop offset="100%" stopColor="#c4b5fd"/></linearGradient>
+              <linearGradient id="bhDark" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#8b7fb8" stopOpacity="0.95"/><stop offset="100%" stopColor="#3d2563" stopOpacity="0.9"/></linearGradient>
+              <radialGradient id="cHub" cx="35%" cy="30%" r="70%"><stop offset="0%" stopColor="#ffffff"/><stop offset="25%" stopColor="#e0d4ff"/><stop offset="65%" stopColor="#7c3aed"/><stop offset="100%" stopColor="#1a1a2e"/></radialGradient>
             </defs>
-            <circle cx="40" cy="40" r="38" fill="url(#bgG)"/>
-            <circle cx="40" cy="40" r="36" stroke="rgba(255,255,255,0.15)" strokeWidth="1"/>
-            {[0,45,90,135,180,225,270,315].map((deg,i)=>{const major=i%2===0,rad=(deg-90)*Math.PI/180,r1=major?30:31.5,r2=36;return(<line key={deg} x1={40+r1*Math.cos(rad)} y1={40+r1*Math.sin(rad)} x2={40+r2*Math.cos(rad)} y2={40+r2*Math.sin(rad)} stroke={major?"rgba(255,255,255,0.6)":"rgba(255,255,255,0.25)"} strokeWidth={major?1.5:0.75} strokeLinecap="round"/>);})}
-            {[["N",40,18],["S",40,67],["E",67,43],["O",13,43]].map(([l,x,y])=>(<text key={l} x={x} y={y} textAnchor="middle" fontSize={l==="N"?"9.5":"7.5"} fontWeight="800" fill={l==="N"?"#ffffff":"rgba(255,255,255,0.45)"} fontFamily="'DM Sans',sans-serif" filter={l==="N"?"url(#gw)":""}>{l}</text>))}
-            <circle cx="40" cy="40" r="24" stroke="rgba(255,255,255,0.08)" strokeWidth="1" fill="none"/>
-            <polygon points="40,14 44.5,40 40,36 35.5,40" fill="url(#ndN)" filter="url(#gw)"/>
-            <polygon points="40,66 44.5,40 40,44 35.5,40" fill="url(#ndS)"/>
-            <circle cx="40" cy="40" r="4.5" fill="#1a1a2e"/>
-            <circle cx="40" cy="40" r="2.5" fill="#e0aaff" filter="url(#gw)"/>
-            <circle cx="40" cy="40" r="1" fill="#ffffff"/>
+            {/* Cercles extérieurs */}
+            <circle cx="250" cy="250" r="245" fill="none" stroke="#ffffff" strokeWidth="1.4" opacity="1"/>
+            <circle cx="250" cy="250" r="238" fill="none" stroke="#ffffff" strokeWidth="0.6" opacity="0.55"/>
+            {/* Graduations 5° */}
+            {Array.from({length:36},(_,i)=>i*10+5).map(deg=>(
+              <line key={`f${deg}`} x1="250" y1="7" x2="250" y2="14" stroke="#ffffff" strokeWidth="0.4" opacity="0.55" transform={`rotate(${deg} 250 250)`}/>
+            ))}
+            {/* Graduations 10° (sauf 30°) */}
+            {[10,20,40,50,70,80,100,110,130,140,160,170,190,200,220,230,250,260,280,290,310,320,340,350].map(deg=>(
+              <line key={`m${deg}`} x1="250" y1="7" x2="250" y2="18" stroke="#ffffff" strokeWidth="0.8" opacity="0.85" transform={`rotate(${deg} 250 250)`}/>
+            ))}
+            {/* Graduations 30° (longues) */}
+            {[0,30,60,90,120,150,180,210,240,270,300,330].map(deg=>(
+              <line key={`l${deg}`} x1="250" y1="7" x2="250" y2="24" stroke="#ffffff" strokeWidth="1.4" opacity="1" transform={`rotate(${deg} 250 250)`}/>
+            ))}
+            {/* Chiffres degrés */}
+            <g fontFamily="'DM Sans',sans-serif" fontSize="13" fontWeight="600" fill="#ffffff" opacity="0.9" textAnchor="middle" dominantBaseline="middle">
+              <text x="250" y="39">0</text>
+              <text x="362" y="69" transform="rotate(30 362 69)">30</text>
+              <text x="431" y="138" transform="rotate(60 431 138)">60</text>
+              <text x="461" y="250" transform="rotate(90 461 250)">90</text>
+              <text x="431" y="362" transform="rotate(120 431 362)">120</text>
+              <text x="362" y="431" transform="rotate(150 362 431)">150</text>
+              <text x="250" y="461" transform="rotate(180 250 461)">180</text>
+              <text x="138" y="431" transform="rotate(210 138 431)">210</text>
+              <text x="69" y="362" transform="rotate(240 69 362)">240</text>
+              <text x="39" y="250" transform="rotate(270 39 250)">270</text>
+              <text x="69" y="138" transform="rotate(300 69 138)">300</text>
+              <text x="138" y="69" transform="rotate(330 138 69)">330</text>
+            </g>
+            {/* Cercle séparateur */}
+            <circle cx="250" cy="250" r="215" fill="none" stroke="#ffffff" strokeWidth="0.8" opacity="0.7"/>
+            {/* Petits losanges aux inter-cardinaux */}
+            <g fill="#ffffff" opacity="0.55">
+              <polygon points="377,118 382,123 377,128 372,123"/>
+              <polygon points="377,372 382,377 377,382 372,377"/>
+              <polygon points="123,372 128,377 123,382 118,377"/>
+              <polygon points="123,118 128,123 123,128 118,123"/>
+            </g>
+            {/* Lettres cardinales N/E/S/W */}
+            <g fontFamily="'DM Sans',sans-serif" fontWeight="800" fill="#ffffff" textAnchor="middle" dominantBaseline="middle">
+              <text x="250" y="70" fontSize="46">N</text>
+              <text x="430" y="250" fontSize="40">E</text>
+              <text x="250" y="430" fontSize="40">S</text>
+              <text x="70" y="250" fontSize="40">W</text>
+            </g>
+            {/* Cercle interne */}
+            <circle cx="250" cy="250" r="145" fill="none" stroke="#ffffff" strokeWidth="0.6" opacity="0.45"/>
+            {/* Branches diagonales */}
+            <polygon points="321,179 250,250 244,244" fill="#d8d0f0" opacity="0.85"/>
+            <polygon points="321,179 250,250 256,256" fill="#5d4a8a" opacity="0.75"/>
+            <polygon points="321,321 250,250 256,244" fill="#d8d0f0" opacity="0.85"/>
+            <polygon points="321,321 250,250 244,256" fill="#5d4a8a" opacity="0.75"/>
+            <polygon points="179,321 250,250 256,256" fill="#d8d0f0" opacity="0.85"/>
+            <polygon points="179,321 250,250 244,244" fill="#5d4a8a" opacity="0.75"/>
+            <polygon points="179,179 250,250 244,256" fill="#d8d0f0" opacity="0.85"/>
+            <polygon points="179,179 250,250 256,244" fill="#5d4a8a" opacity="0.75"/>
+            {/* Branches principales */}
+            <polygon points="250,105 250,250 238,238" fill="url(#bvLight)"/>
+            <polygon points="250,105 250,250 262,238" fill="url(#bvDark)"/>
+            <polygon points="250,395 250,250 262,262" fill="url(#bvLight)"/>
+            <polygon points="250,395 250,250 238,262" fill="url(#bvDark)"/>
+            <polygon points="395,250 250,250 262,238" fill="url(#bhLight)"/>
+            <polygon points="395,250 250,250 262,262" fill="url(#bhDark)"/>
+            <polygon points="105,250 250,250 238,262" fill="url(#bhLight)"/>
+            <polygon points="105,250 250,250 238,238" fill="url(#bhDark)"/>
+            {/* Fleur de lys au-dessus du Nord */}
+            <g transform="translate(250, 95)" opacity="0.95">
+              <path d="M 0,-14 L 4,-4 L 0,2 L -4,-4 Z" fill="#ffffff"/>
+              <path d="M -2,-2 Q -10,-8 -8,-14 Q -4,-8 -2,-2 Z" fill="#ffffff" opacity="0.85"/>
+              <path d="M 2,-2 Q 10,-8 8,-14 Q 4,-8 2,-2 Z" fill="#ffffff" opacity="0.85"/>
+              <ellipse cx="0" cy="2" rx="6" ry="1.2" fill="#ffffff"/>
+            </g>
+            {/* Moyeu central */}
+            <circle cx="250" cy="250" r="18" fill="url(#cHub)"/>
+            <circle cx="250" cy="250" r="18" fill="none" stroke="#ffffff" strokeWidth="0.8" opacity="0.9"/>
+            <circle cx="250" cy="250" r="6" fill="#1a1a2e"/>
+            <ellipse cx="245" cy="245" rx="3" ry="2" fill="#ffffff" opacity="0.6" transform="rotate(-30 245 245)"/>
           </svg>
           <div style={S.logo}>Aéria</div>
         </div>
 
         {/* Slogan culturel unique par langue */}
-        <div style={{fontSize:14,color:"rgba(255,255,255,0.75)",fontStyle:"italic",maxWidth:400,margin:"0 auto 8px",lineHeight:1.6,padding:"0 16px"}}>
+        <div style={{fontSize:22,color:"rgba(255,255,255,0.92)",fontStyle:"italic",fontWeight:300,maxWidth:520,margin:"0 auto 14px",lineHeight:1.45,padding:"0 16px",letterSpacing:"0.2px"}}>
           "{L.slogan}"
         </div>
         <div style={S.tagline}>{L.tagline}</div>
@@ -994,14 +1063,119 @@ export default function App() {
         {/* EMPTY STATE / HOW IT WORKS */}
         {!originWx&&!loading&&!error&&(
           <div className="fade-up">
-            {/* Hero */}
-            <div style={{background:"linear-gradient(135deg,#1a1a2e,#533483)",borderRadius:24,padding:"36px 24px",textAlign:"center",marginBottom:16,position:"relative",overflow:"hidden"}}>
-              <div style={{position:"absolute",top:-30,right:-30,fontSize:120,opacity:0.07,lineHeight:1}}>🧭</div>
-              <div style={{fontSize:44,marginBottom:10}}>☀️</div>
-              <div style={{fontSize:22,fontWeight:800,color:"#fff",lineHeight:1.3,marginBottom:12}}>
+            {/* Hero avec boussole Marine Vintage */}
+            <div style={{background:"radial-gradient(ellipse at top, #1e2749 0%, #0a0e27 50%, #05071a 100%)",borderRadius:24,padding:"40px 24px 32px",textAlign:"center",marginBottom:16,position:"relative",overflow:"hidden"}}>
+              {/* Halo lumineux d'arrière-plan */}
+              <div style={{position:"absolute",top:"50%",left:"50%",transform:"translate(-50%,-65%)",width:340,height:340,background:"radial-gradient(circle, rgba(200,220,255,0.08) 0%, transparent 70%)",borderRadius:"50%",pointerEvents:"none"}}/>
+
+              {/* Boussole SVG */}
+              <div style={{display:"flex",justifyContent:"center",alignItems:"center",marginBottom:24,position:"relative"}}>
+                <svg viewBox="0 0 500 500" width="240" height="240" xmlns="http://www.w3.org/2000/svg" style={{filter:"drop-shadow(0 0 30px rgba(200, 220, 255, 0.15))"}}>
+                  <defs>
+                    <linearGradient id="bv-l" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stopColor="#ffffff"/><stop offset="100%" stopColor="#b8c2dc"/></linearGradient>
+                    <linearGradient id="bv-d" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stopColor="#8590b0"/><stop offset="100%" stopColor="#3d4668"/></linearGradient>
+                    <linearGradient id="bh-l" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#ffffff"/><stop offset="100%" stopColor="#b8c2dc"/></linearGradient>
+                    <linearGradient id="bh-d" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#8590b0"/><stop offset="100%" stopColor="#3d4668"/></linearGradient>
+                    <radialGradient id="hub" cx="35%" cy="30%" r="70%"><stop offset="0%" stopColor="#ffffff"/><stop offset="25%" stopColor="#e8ecf5"/><stop offset="65%" stopColor="#7a86a8"/><stop offset="100%" stopColor="#2d3354"/></radialGradient>
+                  </defs>
+                  {/* Cercles extérieurs */}
+                  <circle cx="250" cy="250" r="245" fill="none" stroke="#ffffff" strokeWidth="1.4"/>
+                  <circle cx="250" cy="250" r="238" fill="none" stroke="#ffffff" strokeWidth="0.6" opacity="0.55"/>
+                  {/* Graduations 5° */}
+                  <g stroke="#ffffff" strokeWidth="0.4" opacity="0.55">
+                    {[5,15,25,35,45,55,65,75,85,95,105,115,125,135,145,155,165,175,185,195,205,215,225,235,245,255,265,275,285,295,305,315,325,335,345,355].map(d=>(
+                      <line key={d} x1="250" y1="7" x2="250" y2="14" transform={`rotate(${d} 250 250)`}/>
+                    ))}
+                  </g>
+                  {/* Graduations 10° */}
+                  <g stroke="#ffffff" strokeWidth="0.8" opacity="0.85">
+                    {[10,20,40,50,70,80,100,110,130,140,160,170,190,200,220,230,250,260,280,290,310,320,340,350].map(d=>(
+                      <line key={d} x1="250" y1="7" x2="250" y2="18" transform={`rotate(${d} 250 250)`}/>
+                    ))}
+                  </g>
+                  {/* Graduations 30° */}
+                  <g stroke="#ffffff" strokeWidth="1.4">
+                    {[0,30,60,90,120,150,180,210,240,270,300,330].map(d=>(
+                      <line key={d} x1="250" y1="7" x2="250" y2="24" transform={`rotate(${d} 250 250)`}/>
+                    ))}
+                  </g>
+                  {/* Chiffres degrés */}
+                  <g fontFamily="serif" fontSize="11" fontWeight="500" fill="#ffffff" opacity="0.9" textAnchor="middle" dominantBaseline="middle">
+                    <text x="250" y="39">0</text>
+                    <text x="362" y="69" transform="rotate(30 362 69)">30</text>
+                    <text x="431" y="138" transform="rotate(60 431 138)">60</text>
+                    <text x="461" y="250" transform="rotate(90 461 250)">90</text>
+                    <text x="431" y="362" transform="rotate(120 431 362)">120</text>
+                    <text x="362" y="431" transform="rotate(150 362 431)">150</text>
+                    <text x="250" y="461" transform="rotate(180 250 461)">180</text>
+                    <text x="138" y="431" transform="rotate(210 138 431)">210</text>
+                    <text x="69" y="362" transform="rotate(240 69 362)">240</text>
+                    <text x="39" y="250" transform="rotate(270 39 250)">270</text>
+                    <text x="69" y="138" transform="rotate(300 69 138)">300</text>
+                    <text x="138" y="69" transform="rotate(330 138 69)">330</text>
+                  </g>
+                  {/* Cercle séparateur */}
+                  <circle cx="250" cy="250" r="215" fill="none" stroke="#ffffff" strokeWidth="0.8" opacity="0.7"/>
+                  {/* Losanges inter-cardinaux */}
+                  <g fill="#ffffff" opacity="0.55">
+                    <polygon points="377,118 382,123 377,128 372,123"/>
+                    <polygon points="377,372 382,377 377,382 372,377"/>
+                    <polygon points="123,372 128,377 123,382 118,377"/>
+                    <polygon points="123,118 128,123 123,128 118,123"/>
+                  </g>
+                  {/* Lettres cardinales */}
+                  <g fontFamily="serif" fontWeight="700" fill="#ffffff" textAnchor="middle" dominantBaseline="middle">
+                    <text x="250" y="70" fontSize="44">N</text>
+                    <text x="430" y="250" fontSize="38">E</text>
+                    <text x="250" y="430" fontSize="38">S</text>
+                    <text x="70" y="250" fontSize="38">W</text>
+                  </g>
+                  {/* Cercle interne */}
+                  <circle cx="250" cy="250" r="145" fill="none" stroke="#ffffff" strokeWidth="0.6" opacity="0.45"/>
+                  {/* Branches diagonales */}
+                  <polygon points="321,179 250,250 244,244" fill="#d8dee8" opacity="0.85"/>
+                  <polygon points="321,179 250,250 256,256" fill="#6b7594" opacity="0.75"/>
+                  <polygon points="321,321 250,250 256,244" fill="#d8dee8" opacity="0.85"/>
+                  <polygon points="321,321 250,250 244,256" fill="#6b7594" opacity="0.75"/>
+                  <polygon points="179,321 250,250 256,256" fill="#d8dee8" opacity="0.85"/>
+                  <polygon points="179,321 250,250 244,244" fill="#6b7594" opacity="0.75"/>
+                  <polygon points="179,179 250,250 244,256" fill="#d8dee8" opacity="0.85"/>
+                  <polygon points="179,179 250,250 256,244" fill="#6b7594" opacity="0.75"/>
+                  {/* Branches principales */}
+                  <polygon points="250,105 250,250 238,238" fill="url(#bv-l)"/>
+                  <polygon points="250,105 250,250 262,238" fill="url(#bv-d)"/>
+                  <polygon points="250,395 250,250 262,262" fill="url(#bv-l)"/>
+                  <polygon points="250,395 250,250 238,262" fill="url(#bv-d)"/>
+                  <polygon points="395,250 250,250 262,238" fill="url(#bh-l)"/>
+                  <polygon points="395,250 250,250 262,262" fill="url(#bh-d)"/>
+                  <polygon points="105,250 250,250 238,262" fill="url(#bh-l)"/>
+                  <polygon points="105,250 250,250 238,238" fill="url(#bh-d)"/>
+                  {/* Fleur de lys */}
+                  <g transform="translate(250, 95)" opacity="0.95">
+                    <path d="M 0,-14 L 4,-4 L 0,2 L -4,-4 Z" fill="#ffffff"/>
+                    <path d="M -2,-2 Q -10,-8 -8,-14 Q -4,-8 -2,-2 Z" fill="#ffffff" opacity="0.85"/>
+                    <path d="M 2,-2 Q 10,-8 8,-14 Q 4,-8 2,-2 Z" fill="#ffffff" opacity="0.85"/>
+                    <ellipse cx="0" cy="2" rx="6" ry="1.2" fill="#ffffff"/>
+                  </g>
+                  {/* Moyeu */}
+                  <circle cx="250" cy="250" r="18" fill="url(#hub)"/>
+                  <circle cx="250" cy="250" r="18" fill="none" stroke="#ffffff" strokeWidth="0.8" opacity="0.9"/>
+                  <circle cx="250" cy="250" r="6" fill="#0a0e27"/>
+                </svg>
+              </div>
+
+              {/* Slogan principal — bien visible */}
+              <div style={{fontSize:18,fontWeight:300,fontStyle:"italic",color:"#fff",lineHeight:1.4,marginBottom:20,maxWidth:320,margin:"0 auto 20px",letterSpacing:"0.3px"}}>
+                {L.slogan}
+              </div>
+
+              {/* Titre principal */}
+              <div style={{fontSize:24,fontWeight:800,color:"#fff",lineHeight:1.3,marginBottom:12}}>
                 {L.hero_title}<br/>
                 <span style={{color:"#c4b5fd"}}>{L.hero_sub}</span>
               </div>
+
+              {/* Description */}
               <div style={{fontSize:14,color:"rgba(255,255,255,0.75)",lineHeight:1.7,maxWidth:300,margin:"0 auto"}}>{L.hero_desc}</div>
             </div>
 
