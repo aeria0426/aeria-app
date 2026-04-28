@@ -35,8 +35,8 @@ const LANGUAGES = {
     sun_label: "Ensoleillement",
     rain_label: "Précipitations",
     better_than: "pts vs départ",
-    terrain: { mountain: "Montagne", coast: "Côte", countryside: "Campagne" },
-    terrain_tag: { mountain: "Randonnée & panoramas", coast: "Plage & baignade", countryside: "Pique-nique & nature" },
+    terrain: { coast: "Plage & baignade", hiking: "Rando & nature", food: "Terrasse & gastronomie", culture: "Ville & culture", view: "Vue & panorama", family: "Famille & loisirs", mountain: "Rando & nature", countryside: "Famille & loisirs" },
+    terrain_tag: { coast: "Mer, lac, baignade", hiking: "Forêts, sentiers, parcs", food: "Restos, bars, cafés", culture: "Vieille ville, musées", view: "Points de vue, photos", family: "Parcs, plans d'eau, enfants", mountain: "Forêts, sentiers, parcs", countryside: "Parcs, plans d'eau, enfants" },
     score_words: ["Déconseillé","Passable","Très bien","Excellent"],
     partner_label: "PARTENAIRE",
     partners: [
@@ -82,8 +82,8 @@ const LANGUAGES = {
     sun_label: "Sunshine",
     rain_label: "Rainfall",
     better_than: "pts vs origin",
-    terrain: { mountain: "Mountain", coast: "Coast", countryside: "Countryside" },
-    terrain_tag: { mountain: "Hiking & panoramic views", coast: "Beach & swimming", countryside: "Picnic & nature" },
+    terrain: { coast: "Beach & swim", hiking: "Hiking & nature", food: "Dining & terraces", culture: "City & culture", view: "Views & panorama", family: "Family & leisure", mountain: "Hiking & nature", countryside: "Family & leisure" },
+    terrain_tag: { coast: "Sea, lake, swimming", hiking: "Forests, trails, parks", food: "Restaurants, bars, cafés", culture: "Old town, museums", view: "Viewpoints, photos", family: "Parks, lakes, kids", mountain: "Forests, trails, parks", countryside: "Parks, lakes, kids" },
     score_words: ["Avoid","Acceptable","Very good","Excellent"],
     partner_label: "PARTNER",
     partners: [
@@ -129,8 +129,8 @@ const LANGUAGES = {
     sun_label: "Sonnenschein",
     rain_label: "Niederschlag",
     better_than: "Pkt. besser als Abfahrt",
-    terrain: { mountain: "Berg", coast: "Küste", countryside: "Land" },
-    terrain_tag: { mountain: "Wandern & Panorama", coast: "Strand & Baden", countryside: "Picknick & Natur" },
+    terrain: { coast: "Strand & Baden", hiking: "Wandern & Natur", food: "Essen & Terrassen", culture: "Stadt & Kultur", view: "Aussicht & Panorama", family: "Familie & Freizeit", mountain: "Wandern & Natur", countryside: "Familie & Freizeit" },
+    terrain_tag: { coast: "Meer, See, Schwimmen", hiking: "Wälder, Pfade, Parks", food: "Restaurants, Bars, Cafés", culture: "Altstadt, Museen", view: "Aussichtspunkte, Fotos", family: "Parks, Seen, Kinder", mountain: "Wälder, Pfade, Parks", countryside: "Parks, Seen, Kinder" },
     score_words: ["Nicht empfohlen","Akzeptabel","Sehr gut","Ausgezeichnet"],
     partner_label: "PARTNER",
     partners: [
@@ -176,8 +176,8 @@ const LANGUAGES = {
     sun_label: "Horas de sol",
     rain_label: "Precipitaciones",
     better_than: "pts vs origen",
-    terrain: { mountain: "Montaña", coast: "Costa", countryside: "Campo" },
-    terrain_tag: { mountain: "Senderismo & vistas", coast: "Playa & baño", countryside: "Picnic & naturaleza" },
+    terrain: { coast: "Playa & baño", hiking: "Senderismo & naturaleza", food: "Comer & terrazas", culture: "Ciudad & cultura", view: "Vistas & panorama", family: "Familia & ocio", mountain: "Senderismo & naturaleza", countryside: "Familia & ocio" },
+    terrain_tag: { coast: "Mar, lago, baño", hiking: "Bosques, senderos, parques", food: "Restaurantes, bares, cafés", culture: "Casco antiguo, museos", view: "Miradores, fotos", family: "Parques, lagos, niños", mountain: "Bosques, senderos, parques", countryside: "Parques, lagos, niños" },
     score_words: ["Desaconsejado","Aceptable","Muy bueno","Excelente"],
     partner_label: "SOCIO",
     partners: [
@@ -223,8 +223,8 @@ const LANGUAGES = {
     sun_label: "Horas de sol",
     rain_label: "Precipitação",
     better_than: "pts vs origem",
-    terrain: { mountain: "Montanha", coast: "Litoral", countryside: "Campo" },
-    terrain_tag: { mountain: "Trilha & panoramas", coast: "Praia & banho", countryside: "Piquenique & natureza" },
+    terrain: { coast: "Praia & banho", hiking: "Trilha & natureza", food: "Comer & terraços", culture: "Cidade & cultura", view: "Vistas & panorama", family: "Família & lazer", mountain: "Trilha & natureza", countryside: "Família & lazer" },
+    terrain_tag: { coast: "Mar, lago, banho", hiking: "Florestas, trilhas, parques", food: "Restaurantes, bares, cafés", culture: "Centro histórico, museus", view: "Miradouros, fotos", family: "Parques, lagos, crianças", mountain: "Florestas, trilhas, parques", countryside: "Parques, lagos, crianças" },
     score_words: ["Evitar","Aceitável","Muito bom","Excelente"],
     partner_label: "PARCEIRO",
     partners: [
@@ -270,8 +270,8 @@ const LANGUAGES = {
     sun_label: "Ore di sole",
     rain_label: "Precipitazioni",
     better_than: "pts vs partenza",
-    terrain: { mountain: "Montagna", coast: "Costa", countryside: "Campagna" },
-    terrain_tag: { mountain: "Escursioni & panorami", coast: "Spiaggia & nuoto", countryside: "Picnic & natura" },
+    terrain: { coast: "Spiaggia & nuoto", hiking: "Escursioni & natura", food: "Mangiare & terrazze", culture: "Città & cultura", view: "Vista & panorama", family: "Famiglia & svago", mountain: "Escursioni & natura", countryside: "Famiglia & svago" },
+    terrain_tag: { coast: "Mare, lago, nuoto", hiking: "Boschi, sentieri, parchi", food: "Ristoranti, bar, caffè", culture: "Centro storico, musei", view: "Punti panoramici, foto", family: "Parchi, laghi, bambini", mountain: "Boschi, sentieri, parchi", countryside: "Parchi, laghi, bambini" },
     score_words: ["Da evitare","Accettabile","Molto buono","Eccellente"],
     partner_label: "PARTNER",
     partners: [
@@ -317,8 +317,8 @@ const LANGUAGES = {
     sun_label: "Zonneschijn",
     rain_label: "Neerslag",
     better_than: "pts vs vertrekpunt",
-    terrain: { mountain: "Berg", coast: "Kust", countryside: "Platteland" },
-    terrain_tag: { mountain: "Wandelen & uitzicht", coast: "Strand & zwemmen", countryside: "Picknick & natuur" },
+    terrain: { coast: "Strand & zwemmen", hiking: "Wandelen & natuur", food: "Eten & terrassen", culture: "Stad & cultuur", view: "Uitzicht & panorama", family: "Familie & vrije tijd", mountain: "Wandelen & natuur", countryside: "Familie & vrije tijd" },
+    terrain_tag: { coast: "Zee, meer, zwemmen", hiking: "Bossen, paden, parken", food: "Restaurants, bars, cafés", culture: "Oude stad, musea", view: "Uitzichtpunten, foto's", family: "Parken, meren, kinderen", mountain: "Bossen, paden, parken", countryside: "Parken, meren, kinderen" },
     score_words: ["Niet aan te raden","Acceptabel","Zeer goed","Uitstekend"],
     partner_label: "PARTNER",
     partners: [
@@ -364,8 +364,8 @@ const LANGUAGES = {
     sun_label: "日照時間",
     rain_label: "降水量",
     better_than: "pt 出発地より良い",
-    terrain: { mountain: "山岳", coast: "海岸", countryside: "田園" },
-    terrain_tag: { mountain: "ハイキング＆絶景", coast: "海水浴＆ビーチ", countryside: "ピクニック＆自然" },
+    terrain: { coast: "ビーチ＆海水浴", hiking: "ハイキング＆自然", food: "グルメ＆テラス", culture: "街＆文化", view: "絶景＆展望", family: "ファミリー＆レジャー", mountain: "ハイキング＆自然", countryside: "ファミリー＆レジャー" },
+    terrain_tag: { coast: "海、湖、海水浴", hiking: "森、トレイル、公園", food: "レストラン、バー、カフェ", culture: "旧市街、美術館", view: "展望スポット、写真", family: "公園、湖、子供", mountain: "森、トレイル、公園", countryside: "公園、湖、子供" },
     score_words: ["おすすめしません","まあまあ","とても良い","最高"],
     partner_label: "パートナー",
     partners: [
@@ -411,8 +411,8 @@ const LANGUAGES = {
     sun_label: "일조 시간",
     rain_label: "강수량",
     better_than: "pt 출발지보다 좋음",
-    terrain: { mountain: "산", coast: "해안", countryside: "전원" },
-    terrain_tag: { mountain: "하이킹 & 절경", coast: "해수욕 & 해변", countryside: "피크닉 & 자연" },
+    terrain: { coast: "해변 & 수영", hiking: "하이킹 & 자연", food: "맛집 & 테라스", culture: "도시 & 문화", view: "전망 & 풍경", family: "가족 & 여가", mountain: "하이킹 & 자연", countryside: "가족 & 여가" },
+    terrain_tag: { coast: "바다, 호수, 수영", hiking: "숲, 산책로, 공원", food: "레스토랑, 바, 카페", culture: "구시가지, 박물관", view: "전망대, 사진", family: "공원, 호수, 아이들", mountain: "숲, 산책로, 공원", countryside: "공원, 호수, 아이들" },
     score_words: ["비추천","보통","매우 좋음","최고"],
     partner_label: "파트너",
     partners: [
@@ -458,8 +458,8 @@ const LANGUAGES = {
     sun_label: "धूप के घंटे",
     rain_label: "बारिश",
     better_than: "pts शुरुआत से बेहतर",
-    terrain: { mountain: "पहाड़", coast: "समुद्र तट", countryside: "ग्रामीण क्षेत्र" },
-    terrain_tag: { mountain: "ट्रेकिंग & नज़ारे", coast: "बीच & तैराकी", countryside: "पिकनिक & प्रकृति" },
+    terrain: { coast: "बीच & तैराकी", hiking: "ट्रेकिंग & प्रकृति", food: "खाना & टेरेस", culture: "शहर & संस्कृति", view: "नज़ारे & परिदृश्य", family: "परिवार & मनोरंजन", mountain: "ट्रेकिंग & प्रकृति", countryside: "परिवार & मनोरंजन" },
+    terrain_tag: { coast: "समुद्र, झील, तैराकी", hiking: "जंगल, रास्ते, पार्क", food: "रेस्तरां, बार, कैफे", culture: "पुराना शहर, संग्रहालय", view: "नज़ारे, फ़ोटो", family: "पार्क, झीलें, बच्चे", mountain: "जंगल, रास्ते, पार्क", countryside: "पार्क, झीलें, बच्चे" },
     score_words: ["उचित नहीं","ठीक है","बहुत अच्छा","उत्कृष्ट"],
     partner_label: "पार्टनर",
     partners: [
@@ -505,8 +505,8 @@ const LANGUAGES = {
     sun_label: "ساعات الشمس",
     rain_label: "هطول الأمطار",
     better_than: "نقطة أفضل من نقطة الانطلاق",
-    terrain: { mountain: "جبل", coast: "ساحل", countryside: "ريف" },
-    terrain_tag: { mountain: "مشي لمسافات طويلة & مناظر خلابة", coast: "شاطئ & سباحة", countryside: "نزهة & طبيعة" },
+    terrain: { coast: "شاطئ & سباحة", hiking: "مشي & طبيعة", food: "مطاعم & تراسات", culture: "مدينة & ثقافة", view: "إطلالة & مناظر", family: "عائلة & ترفيه", mountain: "مشي & طبيعة", countryside: "عائلة & ترفيه" },
+    terrain_tag: { coast: "بحر، بحيرة، سباحة", hiking: "غابات، مسارات، حدائق", food: "مطاعم، حانات، مقاهي", culture: "مدينة قديمة، متاحف", view: "نقاط مشاهدة، صور", family: "حدائق، بحيرات، أطفال", mountain: "غابات، مسارات، حدائق", countryside: "حدائق، بحيرات، أطفال" },
     score_words: ["غير موصى به","مقبول","جيد جداً","ممتاز"],
     partner_label: "شريك",
     partners: [
@@ -552,8 +552,8 @@ const LANGUAGES = {
     sun_label: "Jam cerah",
     rain_label: "Curah hujan",
     better_than: "pts lebih baik dari asal",
-    terrain: { mountain: "Gunung", coast: "Pantai", countryside: "Pedesaan" },
-    terrain_tag: { mountain: "Hiking & pemandangan", coast: "Pantai & berenang", countryside: "Piknik & alam" },
+    terrain: { coast: "Pantai & berenang", hiking: "Hiking & alam", food: "Kuliner & teras", culture: "Kota & budaya", view: "Pemandangan & panorama", family: "Keluarga & rekreasi", mountain: "Hiking & alam", countryside: "Keluarga & rekreasi" },
+    terrain_tag: { coast: "Laut, danau, berenang", hiking: "Hutan, jalur, taman", food: "Restoran, bar, kafé", culture: "Kota tua, museum", view: "Titik pandang, foto", family: "Taman, danau, anak-anak", mountain: "Hutan, jalur, taman", countryside: "Taman, danau, anak-anak" },
     score_words: ["Tidak disarankan","Cukup baik","Sangat baik","Luar biasa"],
     partner_label: "MITRA",
     partners: [
@@ -1196,19 +1196,22 @@ export default function App() {
             {/* Destinations */}
             <div style={{...S.card,padding:"28px 24px",marginBottom:16}}>
               <div style={{fontSize:18,fontWeight:800,color:"#1E293B",marginBottom:16,textAlign:"center"}}>🗺️</div>
-              {[
-                {emoji:"🏖️",lieu:L.terrain.coast,desc:L.terrain_tag.coast,bg:"#ECFDF5",col:"#059669"},
-                {emoji:"🏔️",lieu:L.terrain.mountain,desc:L.terrain_tag.mountain,bg:"#E0F2FE",col:"#0284C7"},
-                {emoji:"🌳",lieu:L.terrain.countryside,desc:L.terrain_tag.countryside,bg:"#FEF9C3",col:"#CA8A04"},
-              ].map(d=>(
-                <div key={d.lieu} style={{display:"flex",gap:14,alignItems:"center",background:d.bg,borderRadius:16,padding:"14px 16px",marginBottom:10}}>
-                  <div style={{fontSize:32,flexShrink:0}}>{d.emoji}</div>
-                  <div>
-                    <div style={{fontSize:15,fontWeight:800,color:"#1E293B",marginBottom:2}}>{d.lieu}</div>
-                    <div style={{fontSize:13,color:"#475569",lineHeight:1.5}}>{d.desc}</div>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10}}>
+                {[
+                  {emoji:"🏖️",lieu:L.terrain.coast,desc:L.terrain_tag.coast,bg:"#ECFDF5",col:"#059669"},
+                  {emoji:"🥾",lieu:L.terrain.hiking,desc:L.terrain_tag.hiking,bg:"#FEF9C3",col:"#CA8A04"},
+                  {emoji:"🍽️",lieu:L.terrain.food,desc:L.terrain_tag.food,bg:"#FFE4E6",col:"#BE123C"},
+                  {emoji:"🏛️",lieu:L.terrain.culture,desc:L.terrain_tag.culture,bg:"#E0E7FF",col:"#4338CA"},
+                  {emoji:"📸",lieu:L.terrain.view,desc:L.terrain_tag.view,bg:"#E0F2FE",col:"#0284C7"},
+                  {emoji:"👨‍👩‍👧",lieu:L.terrain.family,desc:L.terrain_tag.family,bg:"#F3E8FF",col:"#7C3AED"},
+                ].map(d=>(
+                  <div key={d.lieu} style={{display:"flex",flexDirection:"column",alignItems:"center",textAlign:"center",gap:6,background:d.bg,borderRadius:14,padding:"16px 10px"}}>
+                    <div style={{fontSize:30,lineHeight:1}}>{d.emoji}</div>
+                    <div style={{fontSize:13,fontWeight:800,color:"#1E293B",lineHeight:1.2}}>{d.lieu}</div>
+                    <div style={{fontSize:11,color:"#64748B",lineHeight:1.4}}>{d.desc}</div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
 
             {/* CTA final */}
@@ -1216,7 +1219,7 @@ export default function App() {
               <div style={{fontSize:28,marginBottom:8}}>🧭</div>
               <div style={{fontSize:18,fontWeight:800,color:"#fff",marginBottom:16}}>{L.cta_final}</div>
               <div style={{display:"flex",justifyContent:"center",gap:12,flexWrap:"wrap"}}>
-                {["🏖️","🏔️","🌳","🏞️"].map(tag=>(
+                {["🏖️","🥾","🍽️","🏛️","📸","👨‍👩‍👧"].map(tag=>(
                   <span key={tag} style={{background:"rgba(255,255,255,0.15)",color:"#fff",padding:"6px 14px",borderRadius:999,fontSize:16}}>{tag}</span>
                 ))}
               </div>
