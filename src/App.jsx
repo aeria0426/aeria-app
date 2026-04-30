@@ -47,11 +47,14 @@ const LANGUAGES = {
     how_title: "Comment ça marche ?",
     how_desc: "Entrez votre ville ou activez le GPS, choisissez le rayon, et découvrez où le soleil vous attend !",
     steps: [
-      { e:"📍", t:"Indiquez votre départ", d:"Tapez votre ville ou appuyez sur GPS — en une seconde, Aéria sait d'où vous partez." },
-      { e:"🎚️", t:"Choisissez votre rayon", d:"10, 30 ou 80 km — vous choisissez jusqu'où vous êtes prêt à rouler." },
-      { e:"🎯", t:"Découvrez vos destinations", d:"Les 5 meilleurs spots classés par qualité du ciel, avec l'itinéraire direct." },
+      { e:"📍", t:"Votre point de départ.", d:"Saisissez votre ville ou activez la géolocalisation. Aéria identifie votre position en un instant." },
+      { e:"🎚️", t:"Définissez votre rayon de recherche.", d:"De 10 à 80 kilomètres : déterminez la distance que vous êtes prêt à parcourir." },
+      { e:"🎯", t:"Découvrez vos destinations.", d:"Les cinq meilleurs spots ensoleillés, classés par qualité du ciel et accompagnés de leur itinéraire." },
     ],
-    cta_final: "Prêt à partir vers le soleil ?",
+    cta_final: "Le mauvais temps n'existe pas.",
+    cta_sub: "Seulement la mauvaise destination.",
+    cta_signature: "Aéria · La météo en mouvement",
+    cta_btn: "Trouver le soleil",
     error_msg: "Impossible de récupérer les données. Vérifiez votre connexion.",
     city_not_found: "Ville introuvable. Essayez autrement.",
   },
@@ -94,11 +97,14 @@ const LANGUAGES = {
     how_title: "How does it work?",
     how_desc: "Enter your city or use GPS, choose your range, and discover where the sun is waiting for you!",
     steps: [
-      { e:"📍", t:"Tell us where you are", d:"Type your city or tap GPS — Aéria knows your starting point in seconds." },
-      { e:"🎚️", t:"Choose your range", d:"10, 30 or 80 km — how far are you willing to drive for sunshine?" },
-      { e:"🎯", t:"Discover your destinations", d:"Top 5 spots ranked by weather quality, with direct directions." },
+      { e:"📍", t:"Set your starting point.", d:"Enter your city or enable geolocation. Aéria identifies your position instantly." },
+      { e:"🎚️", t:"Define your search radius.", d:"From 10 to 80 kilometers: choose the distance you're willing to travel." },
+      { e:"🎯", t:"Discover your destinations.", d:"The five best sunny spots, ranked by sky quality and shown with direct directions." },
     ],
-    cta_final: "Ready to chase the sun?",
+    cta_final: "There is no such thing as bad weather.",
+    cta_sub: "Only the wrong destination.",
+    cta_signature: "Aéria · Weather in motion",
+    cta_btn: "Find the sun",
     error_msg: "Unable to fetch weather data. Please check your connection.",
     city_not_found: "City not found. Please try again.",
   },
@@ -141,11 +147,14 @@ const LANGUAGES = {
     how_title: "Wie funktioniert das?",
     how_desc: "Geben Sie Ihre Stadt ein oder nutzen Sie GPS, wählen Sie den Radius und entdecken Sie, wo die Sonne wartet!",
     steps: [
-      { e:"📍", t:"Sagen Sie uns Ihren Standort", d:"Stadt eingeben oder GPS drücken — Aéria kennt Ihren Ausgangspunkt sofort." },
-      { e:"🎚️", t:"Radius wählen", d:"10, 30 oder 80 km — wie weit möchten Sie für Sonnenschein fahren?" },
-      { e:"🎯", t:"Ziele entdecken", d:"Top 5 Orte nach Wetterqualität, mit direkter Routenführung." },
+      { e:"📍", t:"Ihr Ausgangspunkt.", d:"Geben Sie Ihre Stadt ein oder aktivieren Sie die Geolokalisierung. Aéria erkennt Ihren Standort sofort." },
+      { e:"🎚️", t:"Definieren Sie Ihren Suchradius.", d:"Von 10 bis 80 Kilometer: bestimmen Sie die Entfernung, die Sie zurücklegen möchten." },
+      { e:"🎯", t:"Entdecken Sie Ihre Reiseziele.", d:"Die fünf besten sonnigen Orte, geordnet nach Himmelsqualität und mit direkter Route." },
     ],
-    cta_final: "Bereit, der Sonne zu folgen?",
+    cta_final: "Schlechtes Wetter gibt es nicht.",
+    cta_sub: "Nur das falsche Ziel.",
+    cta_signature: "Aéria · Das Wetter in Bewegung",
+    cta_btn: "Die Sonne finden",
     error_msg: "Wetterdaten konnten nicht geladen werden. Bitte Verbindung prüfen.",
     city_not_found: "Stadt nicht gefunden. Bitte erneut versuchen.",
   },
@@ -188,11 +197,14 @@ const LANGUAGES = {
     how_title: "¿Cómo funciona?",
     how_desc: "Introduce tu ciudad o usa el GPS, elige el radio y descubre dónde te espera el sol.",
     steps: [
-      { e:"📍", t:"Dinos dónde estás", d:"Escribe tu ciudad o pulsa GPS — Aéria sabe tu punto de partida en segundos." },
-      { e:"🎚️", t:"Elige tu radio", d:"10, 30 o 80 km — ¿cuánto estás dispuesto a conducir por el sol?" },
-      { e:"🎯", t:"Descubre tus destinos", d:"Top 5 lugares por calidad del cielo, con ruta directa." },
+      { e:"📍", t:"Su punto de partida.", d:"Introduzca su ciudad o active la geolocalización. Aéria identifica su posición al instante." },
+      { e:"🎚️", t:"Defina su radio de búsqueda.", d:"De 10 a 80 kilómetros: determine la distancia que está dispuesto a recorrer." },
+      { e:"🎯", t:"Descubra sus destinos.", d:"Los cinco mejores lugares soleados, clasificados por calidad del cielo y con ruta directa." },
     ],
-    cta_final: "¿Listo para perseguir el sol?",
+    cta_final: "El mal tiempo no existe.",
+    cta_sub: "Solo el destino equivocado.",
+    cta_signature: "Aéria · El clima en movimiento",
+    cta_btn: "Encontrar el sol",
     error_msg: "No se pudieron obtener los datos. Comprueba tu conexión.",
     city_not_found: "Ciudad no encontrada. Inténtalo de nuevo.",
   },
@@ -235,11 +247,14 @@ const LANGUAGES = {
     how_title: "Como funciona?",
     how_desc: "Digite sua cidade ou use o GPS, escolha o raio e descubra onde o sol está te esperando!",
     steps: [
-      { e:"📍", t:"Diga onde você está", d:"Digite sua cidade ou aperte GPS — Aéria sabe seu ponto de partida em segundos." },
-      { e:"🎚️", t:"Escolha seu raio", d:"10, 30 ou 80 km — até onde você topa ir pelo sol?" },
-      { e:"🎯", t:"Descubra seus destinos", d:"Top 5 lugares por qualidade do tempo, com rota direta." },
+      { e:"📍", t:"Seu ponto de partida.", d:"Digite sua cidade ou ative a geolocalização. Aéria identifica sua posição instantaneamente." },
+      { e:"🎚️", t:"Defina seu raio de busca.", d:"De 10 a 80 quilômetros: determine a distância que você está disposto a percorrer." },
+      { e:"🎯", t:"Descubra seus destinos.", d:"Os cinco melhores lugares ensolarados, classificados pela qualidade do céu e com rota direta." },
     ],
-    cta_final: "Pronto para correr atrás do sol?",
+    cta_final: "Mau tempo não existe.",
+    cta_sub: "Apenas o destino errado.",
+    cta_signature: "Aéria · O clima em movimento",
+    cta_btn: "Encontrar o sol",
     error_msg: "Não foi possível obter os dados. Verifique sua conexão.",
     city_not_found: "Cidade não encontrada. Tente novamente.",
   },
@@ -282,11 +297,14 @@ const LANGUAGES = {
     how_title: "Come funziona?",
     how_desc: "Inserisci la tua città o usa il GPS, scegli il raggio e scopri dove ti aspetta il sole!",
     steps: [
-      { e:"📍", t:"Dicci da dove parti", d:"Scrivi la tua città o premi GPS — Aéria conosce il tuo punto di partenza in secondi." },
-      { e:"🎚️", t:"Scegli il tuo raggio", d:"10, 30 o 80 km — fin dove sei disposto a guidare per il sole?" },
-      { e:"🎯", t:"Scopri le tue destinazioni", d:"Top 5 posti per qualità del cielo, con percorso diretto." },
+      { e:"📍", t:"Il tuo punto di partenza.", d:"Inserisci la tua città o attiva la geolocalizzazione. Aéria identifica la tua posizione all'istante." },
+      { e:"🎚️", t:"Definisci il tuo raggio di ricerca.", d:"Da 10 a 80 chilometri: stabilisci la distanza che sei disposto a percorrere." },
+      { e:"🎯", t:"Scopri le tue destinazioni.", d:"I cinque migliori luoghi soleggiati, classificati per qualità del cielo e con itinerario diretto." },
     ],
-    cta_final: "Pronto a inseguire il sole?",
+    cta_final: "Il brutto tempo non esiste.",
+    cta_sub: "Solo la destinazione sbagliata.",
+    cta_signature: "Aéria · Il meteo in movimento",
+    cta_btn: "Trovare il sole",
     error_msg: "Impossibile ottenere i dati. Controlla la connessione.",
     city_not_found: "Città non trovata. Riprova.",
   },
@@ -329,11 +347,14 @@ const LANGUAGES = {
     how_title: "Hoe werkt het?",
     how_desc: "Voer je stad in of gebruik GPS, kies je radius en ontdek waar de zon op je wacht!",
     steps: [
-      { e:"📍", t:"Vertel ons waar je bent", d:"Typ je stad of druk op GPS — Aéria kent je vertrekpunt in seconden." },
-      { e:"🎚️", t:"Kies je radius", d:"10, 30 of 80 km — hoe ver wil jij rijden voor zonneschijn?" },
-      { e:"🎯", t:"Ontdek je bestemmingen", d:"Top 5 plekken op weerkwaliteit, met directe routebeschrijving." },
+      { e:"📍", t:"Uw vertrekpunt.", d:"Voer uw stad in of activeer de geolocatie. Aéria identificeert uw locatie in een oogwenk." },
+      { e:"🎚️", t:"Bepaal uw zoekradius.", d:"Van 10 tot 80 kilometer: kies de afstand die u bereid bent af te leggen." },
+      { e:"🎯", t:"Ontdek uw bestemmingen.", d:"De vijf mooiste zonnige plekken, gerangschikt op luchtkwaliteit en met directe routebeschrijving." },
     ],
-    cta_final: "Klaar om de zon te achtervolgen?",
+    cta_final: "Slecht weer bestaat niet.",
+    cta_sub: "Alleen de verkeerde bestemming.",
+    cta_signature: "Aéria · Het weer in beweging",
+    cta_btn: "Vind de zon",
     error_msg: "Kan geen weerdata ophalen. Controleer je verbinding.",
     city_not_found: "Stad niet gevonden. Probeer opnieuw.",
   },
@@ -376,11 +397,14 @@ const LANGUAGES = {
     how_title: "使い方は？",
     how_desc: "都市を入力するかGPSを使い、範囲を選んで、太陽が待つ場所を発見しましょう！",
     steps: [
-      { e:"📍", t:"出発地を教えてください", d:"都市を入力するかGPSを押すと、Aériaが出発地を認識します。" },
-      { e:"🎚️", t:"範囲を選んでください", d:"10・30・80km — どこまで走りますか？" },
-      { e:"🎯", t:"目的地を発見しよう", d:"天気スコアでランク付けされたトップ5スポットと直接ルートを表示。" },
+      { e:"📍", t:"出発地を設定。", d:"都市を入力するか、位置情報を有効にしてください。Aériaが瞬時にあなたの位置を特定します。" },
+      { e:"🎚️", t:"検索範囲を設定。", d:"10kmから80kmまで、お出かけになる距離をお選びください。" },
+      { e:"🎯", t:"目的地を発見。", d:"天気スコアでランク付けされた、晴天のおすすめスポット5選。直接ルートも表示します。" },
     ],
-    cta_final: "太陽を追いかける準備はできていますか？",
+    cta_final: "悪い天気というものはない。",
+    cta_sub: "あるのは、間違った行き先だけ。",
+    cta_signature: "Aéria · 動く天気",
+    cta_btn: "太陽を見つける",
     error_msg: "データを取得できません。接続を確認してください。",
     city_not_found: "都市が見つかりません。もう一度お試しください。",
   },
@@ -423,11 +447,14 @@ const LANGUAGES = {
     how_title: "어떻게 사용하나요?",
     how_desc: "도시를 입력하거나 GPS를 사용하고, 반경을 선택하면 태양이 기다리는 곳을 발견할 수 있어요!",
     steps: [
-      { e:"📍", t:"출발지를 알려주세요", d:"도시를 입력하거나 GPS를 누르면 Aéria가 바로 출발지를 인식합니다." },
-      { e:"🎚️", t:"반경을 선택하세요", d:"10, 30 또는 80km — 햇빛을 위해 얼마나 달릴 건가요?" },
-      { e:"🎯", t:"목적지를 발견하세요", d:"날씨 품질 순위별 상위 5개 장소와 직접 경로를 안내합니다." },
+      { e:"📍", t:"출발지 설정.", d:"도시를 입력하거나 위치 정보를 활성화하세요. Aéria가 즉시 위치를 파악합니다." },
+      { e:"🎚️", t:"검색 반경 설정.", d:"10km부터 80km까지, 이동하실 거리를 선택해 주세요." },
+      { e:"🎯", t:"목적지 발견.", d:"하늘의 품질에 따라 선정된 가장 화창한 장소 다섯 곳과 직접 경로를 안내합니다." },
     ],
-    cta_final: "태양을 쫓을 준비가 되셨나요?",
+    cta_final: "나쁜 날씨란 없습니다.",
+    cta_sub: "잘못된 목적지가 있을 뿐입니다.",
+    cta_signature: "Aéria · 움직이는 날씨",
+    cta_btn: "햇빛 찾기",
     error_msg: "데이터를 가져올 수 없습니다. 연결을 확인해 주세요.",
     city_not_found: "도시를 찾을 수 없습니다. 다시 시도해 주세요.",
   },
@@ -470,11 +497,14 @@ const LANGUAGES = {
     how_title: "यह कैसे काम करता है?",
     how_desc: "अपना शहर दर्ज करें या GPS का उपयोग करें, दायरा चुनें और जानें कि धूप कहाँ आपका इंतज़ार कर रही है!",
     steps: [
-      { e:"📍", t:"हमें बताएं आप कहाँ हैं", d:"शहर टाइप करें या GPS दबाएं — Aéria तुरंत आपकी लोकेशन जान लेता है।" },
-      { e:"🎚️", t:"अपना दायरा चुनें", d:"10, 30 या 80 किमी — धूप के लिए आप कितनी दूर जाना चाहते हैं?" },
-      { e:"🎯", t:"अपने गंतव्य खोजें", d:"मौसम गुणवत्ता के हिसाब से टॉप 5 जगहें, सीधे रास्ते के साथ।" },
+      { e:"📍", t:"अपना प्रस्थान बिंदु निर्धारित करें।", d:"अपना शहर दर्ज करें या स्थान सेवा सक्षम करें। Aéria तुरंत आपकी स्थिति की पहचान कर लेता है।" },
+      { e:"🎚️", t:"अपनी खोज सीमा निर्धारित करें।", d:"10 से 80 किलोमीटर तक: वह दूरी चुनें जिसे आप तय करने को तैयार हैं।" },
+      { e:"🎯", t:"अपने गंतव्य खोजें।", d:"आसमान की गुणवत्ता के अनुसार वर्गीकृत पाँच सर्वश्रेष्ठ धूप वाले स्थान, सीधे मार्ग के साथ।" },
     ],
-    cta_final: "धूप का पीछा करने के लिए तैयार हैं?",
+    cta_final: "ख़राब मौसम जैसा कुछ नहीं होता।",
+    cta_sub: "केवल ग़लत मंज़िल होती है।",
+    cta_signature: "Aéria · चलता-फिरता मौसम",
+    cta_btn: "धूप खोजें",
     error_msg: "डेटा नहीं मिल सका। अपना कनेक्शन जाँचें।",
     city_not_found: "शहर नहीं मिला। फिर से प्रयास करें।",
   },
@@ -517,11 +547,14 @@ const LANGUAGES = {
     how_title: "كيف يعمل؟",
     how_desc: "أدخل مدينتك أو استخدم GPS، اختر النطاق، واكتشف أين تنتظرك الشمس!",
     steps: [
-      { e:"📍", t:"أخبرنا أين أنت", d:"اكتب مدينتك أو اضغط GPS — يعرف Aéria موقع انطلاقك فوراً." },
-      { e:"🎚️", t:"اختر نطاقك", d:"10 أو 30 أو 80 كم — إلى أي مدى ستذهب لإيجاد الشمس؟" },
-      { e:"🎯", t:"اكتشف وجهاتك", d:"أفضل 5 أماكن مصنفة حسب جودة الطقس، مع اتجاهات مباشرة." },
+      { e:"📍", t:"حدّد نقطة انطلاقك.", d:"أدخل مدينتك أو فعّل خدمة الموقع. يحدّد Aéria موقعك في لحظة." },
+      { e:"🎚️", t:"حدّد نطاق البحث.", d:"من 10 إلى 80 كيلومتراً: اختر المسافة التي ترغب في قطعها." },
+      { e:"🎯", t:"اكتشف وجهاتك.", d:"أفضل خمسة أماكن مشمسة، مصنّفة حسب جودة السماء ومرفقة بالطريق المباشر." },
     ],
-    cta_final: "هل أنت مستعد لمطاردة الشمس؟",
+    cta_final: "لا يوجد طقس سيّئ.",
+    cta_sub: "هناك فقط الوجهة الخاطئة.",
+    cta_signature: "Aéria · الطقس في حركة",
+    cta_btn: "ابحث عن الشمس",
     error_msg: "تعذّر الحصول على البيانات. يرجى التحقق من الاتصال.",
     city_not_found: "المدينة غير موجودة. حاول مرة أخرى.",
   },
@@ -564,11 +597,14 @@ const LANGUAGES = {
     how_title: "Bagaimana cara kerjanya?",
     how_desc: "Masukkan kotamu atau gunakan GPS, pilih radius, dan temukan di mana matahari menunggumu!",
     steps: [
-      { e:"📍", t:"Beritahu kami lokasimu", d:"Ketik kotamu atau tekan GPS — Aéria langsung tahu titik keberangkatanmu." },
-      { e:"🎚️", t:"Pilih radiusmu", d:"10, 30 atau 80 km — seberapa jauh kamu mau pergi demi sinar matahari?" },
-      { e:"🎯", t:"Temukan destinasimu", d:"5 tempat terbaik berdasarkan kualitas cuaca, dengan petunjuk arah langsung." },
+      { e:"📍", t:"Tentukan titik keberangkatan Anda.", d:"Masukkan kota Anda atau aktifkan geolokasi. Aéria mengidentifikasi lokasi Anda dalam sekejap." },
+      { e:"🎚️", t:"Tentukan radius pencarian Anda.", d:"Dari 10 hingga 80 kilometer: tentukan jarak yang siap Anda tempuh." },
+      { e:"🎯", t:"Temukan destinasi Anda.", d:"Lima tempat tercerah, diurutkan berdasarkan kualitas langit dan disertai rute langsung." },
     ],
-    cta_final: "Siap mengejar matahari?",
+    cta_final: "Tidak ada cuaca buruk.",
+    cta_sub: "Yang ada hanyalah tujuan yang salah.",
+    cta_signature: "Aéria · Cuaca dalam gerak",
+    cta_btn: "Temukan matahari",
     error_msg: "Tidak dapat mengambil data. Periksa koneksimu.",
     city_not_found: "Kota tidak ditemukan. Coba lagi.",
   },
@@ -1180,48 +1216,171 @@ export default function App() {
             </div>
 
             {/* Steps */}
-            <div style={{...S.card,padding:"28px 24px",marginBottom:16}}>
-              <div style={{fontSize:18,fontWeight:800,color:"#1E293B",marginBottom:20,textAlign:"center"}}>{L.how_title} 👇</div>
+            <div style={{...S.card,padding:"40px 32px",marginBottom:16}}>
+              <div style={{fontSize:26,fontWeight:700,color:"#1E293B",marginBottom:32,textAlign:"center",letterSpacing:"-0.3px"}}>{L.how_title}</div>
               {L.steps.map((s,i)=>(
-                <div key={i} style={{display:"flex",gap:16,alignItems:"flex-start",marginBottom:20}}>
-                  <div style={{width:48,height:48,borderRadius:16,background:["#EDE9FE","#E0F2FE","#ECFDF5"][i],display:"flex",alignItems:"center",justifyContent:"center",fontSize:22,flexShrink:0}}>{s.e}</div>
-                  <div>
-                    <div style={{fontSize:15,fontWeight:800,color:"#1E293B",marginBottom:3}}>{s.t}</div>
-                    <div style={{fontSize:14,color:"#64748B",lineHeight:1.6}}>{s.d}</div>
+                <div key={i} style={{display:"flex",gap:20,alignItems:"flex-start",marginBottom:i===L.steps.length-1?0:32}}>
+                  <div style={{width:64,height:64,borderRadius:18,background:["#EDE9FE","#E0F2FE","#ECFDF5"][i],display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
+                    {i===0&&(
+                      <svg width="40" height="40" viewBox="0 0 64 64" fill="none">
+                        <circle cx="32" cy="32" r="20" stroke="#7c3aed" strokeWidth="2" fill="none" opacity="0.25"/>
+                        <circle cx="32" cy="32" r="14" stroke="#7c3aed" strokeWidth="2" fill="none" opacity="0.5" strokeDasharray="2 2"/>
+                        <circle cx="32" cy="32" r="8" fill="#ddd6fe" stroke="#5b21b6" strokeWidth="2"/>
+                        <path d="M32 28 L33.5 31 L36.5 31 L34 33 L35 36 L32 34 L29 36 L30 33 L27.5 31 L30.5 31 Z" fill="#fcd34d" stroke="#f59e0b" strokeWidth="0.6"/>
+                      </svg>
+                    )}
+                    {i===1&&(
+                      <svg width="40" height="40" viewBox="0 0 64 64" fill="none">
+                        <circle cx="32" cy="32" r="22" fill="none" stroke="#0c4a6e" strokeWidth="2" strokeDasharray="3 3"/>
+                        <circle cx="32" cy="32" r="14" fill="none" stroke="#0c4a6e" strokeWidth="2" opacity="0.6"/>
+                        <circle cx="32" cy="32" r="6" fill="#bae6fd" stroke="#0c4a6e" strokeWidth="2"/>
+                        <circle cx="32" cy="32" r="2" fill="#0c4a6e"/>
+                        <circle cx="50" cy="14" r="4" fill="#fcd34d"/>
+                        <circle cx="50" cy="14" r="4" fill="none" stroke="#f59e0b" strokeWidth="1"/>
+                        <line x1="50" y1="6" x2="50" y2="9" stroke="#fcd34d" strokeWidth="1.5" strokeLinecap="round"/>
+                        <line x1="50" y1="19" x2="50" y2="22" stroke="#fcd34d" strokeWidth="1.5" strokeLinecap="round"/>
+                        <line x1="42" y1="14" x2="45" y2="14" stroke="#fcd34d" strokeWidth="1.5" strokeLinecap="round"/>
+                        <line x1="55" y1="14" x2="58" y2="14" stroke="#fcd34d" strokeWidth="1.5" strokeLinecap="round"/>
+                      </svg>
+                    )}
+                    {i===2&&(
+                      <svg width="40" height="40" viewBox="0 0 64 64" fill="none">
+                        <path d="M10 20 L24 16 L40 20 L54 16 L54 48 L40 52 L24 48 L10 52 Z" fill="#dcfce7" stroke="#166534" strokeWidth="2" strokeLinejoin="round"/>
+                        <line x1="24" y1="16" x2="24" y2="48" stroke="#166534" strokeWidth="1.5" opacity="0.5"/>
+                        <line x1="40" y1="20" x2="40" y2="52" stroke="#166534" strokeWidth="1.5" opacity="0.5"/>
+                        <path d="M16 42 Q24 30, 32 36 Q42 42, 48 28" stroke="#166534" strokeWidth="2" strokeLinecap="round" fill="none" strokeDasharray="2 2"/>
+                        <circle cx="16" cy="42" r="2.5" fill="#166534"/>
+                        <circle cx="48" cy="28" r="5" fill="#fcd34d" stroke="#f59e0b" strokeWidth="1.2"/>
+                        <line x1="48" y1="20" x2="48" y2="22" stroke="#f59e0b" strokeWidth="1.5" strokeLinecap="round"/>
+                        <line x1="48" y1="34" x2="48" y2="36" stroke="#f59e0b" strokeWidth="1.5" strokeLinecap="round"/>
+                        <line x1="40" y1="28" x2="42" y2="28" stroke="#f59e0b" strokeWidth="1.5" strokeLinecap="round"/>
+                        <line x1="54" y1="28" x2="56" y2="28" stroke="#f59e0b" strokeWidth="1.5" strokeLinecap="round"/>
+                        <line x1="42" y1="22" x2="43.5" y2="23.5" stroke="#f59e0b" strokeWidth="1.5" strokeLinecap="round"/>
+                        <line x1="52.5" y1="32.5" x2="54" y2="34" stroke="#f59e0b" strokeWidth="1.5" strokeLinecap="round"/>
+                      </svg>
+                    )}
+                  </div>
+                  <div style={{flex:1,paddingTop:4}}>
+                    <div style={{fontSize:18,fontWeight:700,color:"#533483",marginBottom:6,letterSpacing:"-0.2px"}}>{s.t}</div>
+                    <div style={{fontSize:16,color:"#475569",lineHeight:1.65}}>{s.d}</div>
                   </div>
                 </div>
               ))}
             </div>
 
             {/* Destinations */}
-            <div style={{...S.card,padding:"28px 24px",marginBottom:16}}>
-              <div style={{fontSize:18,fontWeight:800,color:"#1E293B",marginBottom:16,textAlign:"center"}}>🗺️</div>
-              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10}}>
+            <div style={{...S.card,padding:"32px 24px",marginBottom:16}}>
+              <div style={{fontSize:14,fontWeight:800,color:"#94a3b8",marginBottom:24,textAlign:"center",letterSpacing:"3px",textTransform:"uppercase"}}>{L.results_title || "Destinations"}</div>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>
                 {[
-                  {emoji:"🏖️",lieu:L.terrain.coast,desc:L.terrain_tag.coast,bg:"#ECFDF5",col:"#059669"},
-                  {emoji:"🥾",lieu:L.terrain.hiking,desc:L.terrain_tag.hiking,bg:"#FEF9C3",col:"#CA8A04"},
-                  {emoji:"🍽️",lieu:L.terrain.food,desc:L.terrain_tag.food,bg:"#FFE4E6",col:"#BE123C"},
-                  {emoji:"🏛️",lieu:L.terrain.culture,desc:L.terrain_tag.culture,bg:"#E0E7FF",col:"#4338CA"},
-                  {emoji:"📸",lieu:L.terrain.view,desc:L.terrain_tag.view,bg:"#E0F2FE",col:"#0284C7"},
-                  {emoji:"👨‍👩‍👧",lieu:L.terrain.family,desc:L.terrain_tag.family,bg:"#F3E8FF",col:"#7C3AED"},
+                  {svg:"coast",lieu:L.terrain.coast,desc:L.terrain_tag.coast,bg:"#ECFDF5"},
+                  {svg:"hiking",lieu:L.terrain.hiking,desc:L.terrain_tag.hiking,bg:"#FEF9C3"},
+                  {svg:"food",lieu:L.terrain.food,desc:L.terrain_tag.food,bg:"#FFE4E6"},
+                  {svg:"culture",lieu:L.terrain.culture,desc:L.terrain_tag.culture,bg:"#E0E7FF"},
+                  {svg:"view",lieu:L.terrain.view,desc:L.terrain_tag.view,bg:"#E0F2FE"},
+                  {svg:"family",lieu:L.terrain.family,desc:L.terrain_tag.family,bg:"#F3E8FF"},
                 ].map(d=>(
-                  <div key={d.lieu} style={{display:"flex",flexDirection:"column",alignItems:"center",textAlign:"center",gap:6,background:d.bg,borderRadius:14,padding:"16px 10px"}}>
-                    <div style={{fontSize:30,lineHeight:1}}>{d.emoji}</div>
-                    <div style={{fontSize:13,fontWeight:800,color:"#1E293B",lineHeight:1.2}}>{d.lieu}</div>
-                    <div style={{fontSize:11,color:"#64748B",lineHeight:1.4}}>{d.desc}</div>
+                  <div key={d.lieu} style={{display:"flex",flexDirection:"column",alignItems:"center",textAlign:"center",gap:14,background:d.bg,borderRadius:18,padding:"24px 12px",minHeight:180}}>
+                    <div style={{width:"min(72px, 22vw)",height:"min(72px, 22vw)",display:"flex",alignItems:"center",justifyContent:"center"}}>
+                      {d.svg==="coast"&&(
+                        <svg viewBox="0 0 64 64" fill="none" width="100%" height="100%">
+                          <path d="M6 48 Q16 44, 26 48 T46 48 T58 48" stroke="#059669" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.4"/>
+                          <path d="M6 53 Q16 49, 26 53 T46 53 T58 53" stroke="#059669" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.7"/>
+                          <line x1="32" y1="22" x2="32" y2="48" stroke="#0f3460" strokeWidth="2" strokeLinecap="round"/>
+                          <path d="M14 22 Q32 6, 50 22" fill="#fef3c7" stroke="#0f3460" strokeWidth="2" strokeLinejoin="round"/>
+                          <path d="M22 22 L24 12" stroke="#0f3460" strokeWidth="1.4" opacity="0.6"/>
+                          <path d="M32 22 L32 8" stroke="#0f3460" strokeWidth="1.4" opacity="0.6"/>
+                          <path d="M42 22 L40 12" stroke="#0f3460" strokeWidth="1.4" opacity="0.6"/>
+                          <circle cx="48" cy="14" r="3.5" fill="#fcd34d"/>
+                          <circle cx="48" cy="14" r="3.5" fill="none" stroke="#f59e0b" strokeWidth="1"/>
+                        </svg>
+                      )}
+                      {d.svg==="hiking"&&(
+                        <svg viewBox="0 0 64 64" fill="none" width="100%" height="100%">
+                          <path d="M4 50 L20 22 L36 50 Z" fill="#fef3c7" stroke="#92400e" strokeWidth="2" strokeLinejoin="round"/>
+                          <path d="M22 50 L36 30 L48 42 L60 50 Z" fill="#fde68a" stroke="#92400e" strokeWidth="2" strokeLinejoin="round"/>
+                          <path d="M14 32 L20 22 L26 32 L22 30 L20 32 L18 30 Z" fill="#fff" stroke="#92400e" strokeWidth="1.4" strokeLinejoin="round"/>
+                          <path d="M32 50 Q36 44, 30 38 Q26 32, 32 28" stroke="#92400e" strokeWidth="1.7" strokeLinecap="round" strokeDasharray="2 2" fill="none"/>
+                          <circle cx="48" cy="14" r="3.5" fill="#fcd34d"/>
+                          <circle cx="48" cy="14" r="3.5" fill="none" stroke="#f59e0b" strokeWidth="1"/>
+                        </svg>
+                      )}
+                      {d.svg==="food"&&(
+                        <svg viewBox="0 0 64 64" fill="none" width="100%" height="100%">
+                          <path d="M14 24 Q14 32, 19 36 L19 44" stroke="#9f1239" strokeWidth="2" strokeLinecap="round" fill="none"/>
+                          <path d="M24 24 Q24 32, 19 36" stroke="#9f1239" strokeWidth="2" strokeLinecap="round" fill="none"/>
+                          <path d="M15 26 Q19 30, 23 26 Q22 32, 19 35 Q16 32, 15 26 Z" fill="#fecdd3" opacity="0.8"/>
+                          <line x1="14" y1="46" x2="24" y2="46" stroke="#9f1239" strokeWidth="2" strokeLinecap="round"/>
+                          <ellipse cx="44" cy="34" rx="14" ry="3" fill="#fecdd3" stroke="#9f1239" strokeWidth="2"/>
+                          <ellipse cx="44" cy="32" rx="11" ry="2" fill="#fff" stroke="#9f1239" strokeWidth="1.4"/>
+                          <line x1="38" y1="20" x2="38" y2="32" stroke="#9f1239" strokeWidth="2" strokeLinecap="round"/>
+                          <path d="M36 20 L36 24 M38 20 L38 24 M40 20 L40 24" stroke="#9f1239" strokeWidth="1.4" strokeLinecap="round"/>
+                          <line x1="50" y1="20" x2="50" y2="32" stroke="#9f1239" strokeWidth="2" strokeLinecap="round"/>
+                          <path d="M48 20 Q50 18, 52 20 L52 26 L48 26 Z" fill="#fecdd3" stroke="#9f1239" strokeWidth="1.4"/>
+                          <circle cx="50" cy="50" r="3.5" fill="#fcd34d"/>
+                          <circle cx="50" cy="50" r="3.5" fill="none" stroke="#f59e0b" strokeWidth="1"/>
+                        </svg>
+                      )}
+                      {d.svg==="culture"&&(
+                        <svg viewBox="0 0 64 64" fill="none" width="100%" height="100%">
+                          <path d="M10 22 L32 8 L54 22 Z" fill="#c7d2fe" stroke="#1e1b4b" strokeWidth="2" strokeLinejoin="round"/>
+                          <line x1="8" y1="24" x2="56" y2="24" stroke="#1e1b4b" strokeWidth="2.8" strokeLinecap="round"/>
+                          <line x1="14" y1="26" x2="14" y2="48" stroke="#1e1b4b" strokeWidth="2.2" strokeLinecap="round"/>
+                          <line x1="23" y1="26" x2="23" y2="48" stroke="#1e1b4b" strokeWidth="2.2" strokeLinecap="round"/>
+                          <line x1="32" y1="26" x2="32" y2="48" stroke="#1e1b4b" strokeWidth="2.2" strokeLinecap="round"/>
+                          <line x1="41" y1="26" x2="41" y2="48" stroke="#1e1b4b" strokeWidth="2.2" strokeLinecap="round"/>
+                          <line x1="50" y1="26" x2="50" y2="48" stroke="#1e1b4b" strokeWidth="2.2" strokeLinecap="round"/>
+                          <line x1="8" y1="50" x2="56" y2="50" stroke="#1e1b4b" strokeWidth="2.8" strokeLinecap="round"/>
+                          <line x1="6" y1="54" x2="58" y2="54" stroke="#1e1b4b" strokeWidth="1.7" strokeLinecap="round" opacity="0.6"/>
+                          <circle cx="32" cy="14" r="3.5" fill="#fcd34d"/>
+                          <circle cx="32" cy="14" r="3.5" fill="none" stroke="#f59e0b" strokeWidth="1"/>
+                        </svg>
+                      )}
+                      {d.svg==="view"&&(
+                        <svg viewBox="0 0 64 64" fill="none" width="100%" height="100%">
+                          <rect x="8" y="20" width="48" height="32" rx="4" fill="#bae6fd" stroke="#0c4a6e" strokeWidth="2"/>
+                          <rect x="20" y="14" width="14" height="6" rx="1" fill="#bae6fd" stroke="#0c4a6e" strokeWidth="2"/>
+                          <circle cx="32" cy="36" r="11" fill="#fff" stroke="#0c4a6e" strokeWidth="2"/>
+                          <circle cx="32" cy="36" r="7" fill="#bae6fd" stroke="#0c4a6e" strokeWidth="1.7"/>
+                          <circle cx="32" cy="36" r="3.5" fill="#0c4a6e"/>
+                          <ellipse cx="29" cy="33" rx="2" ry="1.5" fill="#fff" opacity="0.7"/>
+                          <circle cx="48" cy="26" r="1.5" fill="#0c4a6e"/>
+                          <circle cx="14" cy="26" r="3.5" fill="#fcd34d"/>
+                          <circle cx="14" cy="26" r="3.5" fill="none" stroke="#f59e0b" strokeWidth="1"/>
+                          <line x1="14" y1="20" x2="14" y2="22" stroke="#fcd34d" strokeWidth="1.4" strokeLinecap="round"/>
+                          <line x1="14" y1="30" x2="14" y2="32" stroke="#fcd34d" strokeWidth="1.4" strokeLinecap="round"/>
+                          <line x1="8" y1="26" x2="10" y2="26" stroke="#fcd34d" strokeWidth="1.4" strokeLinecap="round"/>
+                        </svg>
+                      )}
+                      {d.svg==="family"&&(
+                        <svg viewBox="0 0 64 64" fill="none" width="100%" height="100%">
+                          <circle cx="22" cy="20" r="5" fill="#e9d5ff" stroke="#581c87" strokeWidth="2"/>
+                          <path d="M14 48 Q14 32, 22 32 Q30 32, 30 48" fill="#e9d5ff" stroke="#581c87" strokeWidth="2" strokeLinejoin="round"/>
+                          <circle cx="44" cy="22" r="4.5" fill="#e9d5ff" stroke="#581c87" strokeWidth="2"/>
+                          <path d="M37 48 Q37 33, 44 33 Q51 33, 51 48" fill="#e9d5ff" stroke="#581c87" strokeWidth="2" strokeLinejoin="round"/>
+                          <circle cx="33" cy="38" r="3.5" fill="#fcd34d" stroke="#581c87" strokeWidth="1.7"/>
+                          <path d="M28 52 Q28 42, 33 42 Q38 42, 38 52" fill="#fcd34d" stroke="#581c87" strokeWidth="1.7" strokeLinejoin="round"/>
+                          <path d="M32 8 C32 6, 30 4, 28 6 C26 4, 24 6, 24 8 C24 10, 28 13, 28 13 C28 13, 32 10, 32 8 Z" fill="#fcd34d" stroke="#f59e0b" strokeWidth="1"/>
+                        </svg>
+                      )}
+                    </div>
+                    <div style={{fontSize:"clamp(15px, 4vw, 18px)",fontWeight:800,color:"#0f172a",lineHeight:1.25,letterSpacing:"-0.2px"}}>{d.lieu}</div>
+                    <div style={{fontSize:"clamp(12px, 3.2vw, 14px)",color:"#475569",lineHeight:1.5,fontWeight:500}}>{d.desc}</div>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* CTA final */}
-            <div style={{background:"linear-gradient(135deg,#533483,#7c3aed)",borderRadius:20,padding:"28px 24px",textAlign:"center",marginBottom:16}}>
-              <div style={{fontSize:28,marginBottom:8}}>🧭</div>
-              <div style={{fontSize:18,fontWeight:800,color:"#fff",marginBottom:16}}>{L.cta_final}</div>
-              <div style={{display:"flex",justifyContent:"center",gap:12,flexWrap:"wrap"}}>
-                {["🏖️","🥾","🍽️","🏛️","📸","👨‍👩‍👧"].map(tag=>(
-                  <span key={tag} style={{background:"rgba(255,255,255,0.15)",color:"#fff",padding:"6px 14px",borderRadius:999,fontSize:16}}>{tag}</span>
-                ))}
+            {/* CTA final — Manifeste éditorial */}
+            <div style={{background:"linear-gradient(135deg,#1a1a2e 0%,#16213e 35%,#0f3460 65%,#533483 100%)",borderRadius:24,padding:"56px 32px",textAlign:"center",marginBottom:16,position:"relative",overflow:"hidden"}}>
+              {/* Halo lumineux décoratif */}
+              <div style={{position:"absolute",top:"-30%",left:"50%",transform:"translateX(-50%)",width:"120%",height:"100%",background:"radial-gradient(ellipse at center, rgba(196,181,253,0.15) 0%, transparent 60%)",pointerEvents:"none"}}/>
+              <div style={{position:"relative",zIndex:1}}>
+                <div style={{fontFamily:"'Cormorant Garamond', Georgia, serif",fontSize:32,fontWeight:400,fontStyle:"italic",color:"#fff",lineHeight:1.25,marginBottom:6,letterSpacing:"-0.5px"}}>{L.cta_final}</div>
+                <div style={{fontFamily:"'Cormorant Garamond', Georgia, serif",fontSize:24,fontWeight:300,fontStyle:"italic",color:"rgba(255,255,255,0.78)",lineHeight:1.3,marginBottom:32,letterSpacing:"-0.3px"}}>{L.cta_sub}</div>
+                <div style={{width:48,height:1,background:"rgba(255,255,255,0.3)",margin:"0 auto 24px"}}/>
+                <button onClick={()=>window.scrollTo({top:0,behavior:"smooth"})} style={{background:"#fff",color:"#1a1a2e",border:"none",padding:"14px 32px",borderRadius:999,fontSize:15,fontWeight:600,letterSpacing:"0.3px",cursor:"pointer",fontFamily:"inherit",marginBottom:28,transition:"all 0.2s",boxShadow:"0 4px 16px rgba(0,0,0,0.15)"}}>{L.cta_btn} →</button>
+                <div style={{fontSize:11,fontWeight:500,letterSpacing:"3px",textTransform:"uppercase",color:"rgba(255,255,255,0.55)"}}>{L.cta_signature}</div>
               </div>
             </div>
           </div>
