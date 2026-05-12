@@ -11,7 +11,6 @@ import {
 const LANGUAGES = {
   fr: {
     flag: "🇫🇷", name: "Français",
-    // Slogan inspiré de la liberté, du terroir et de l'art de vivre français
     slogan: "La vie est trop belle pour rester sous la pluie.",
     tagline: "Trouvez le beau temps près de chez vous",
     hero_title: "Il pleut chez vous ?",
@@ -62,7 +61,6 @@ const LANGUAGES = {
 
   en: {
     flag: "🇬🇧", name: "English",
-    // Inspired by British pragmatism + understated wit
     slogan: "Because life's too short to spend indoors when sunshine is just around the corner.",
     tagline: "Find sunny weather near you",
     hero_title: "Raining outside?",
@@ -113,7 +111,6 @@ const LANGUAGES = {
 
   de: {
     flag: "🇩🇪", name: "Deutsch",
-    // Inspiriert von Ordnung, Natur und der deutschen Wanderkultur
     slogan: "Schlechtes Wetter gibt es nicht — nur den falschen Ort.",
     tagline: "Finden Sie gutes Wetter in Ihrer Nähe",
     hero_title: "Regnet es bei Ihnen?",
@@ -164,7 +161,6 @@ const LANGUAGES = {
 
   es: {
     flag: "🇪🇸", name: "Español",
-    // Inspirado en la pasión, el calor y el espíritu aventurero hispano
     slogan: "El sol no desaparece. Solo cambia de dirección. Síguelo.",
     tagline: "Encuentra buen tiempo cerca de ti",
     hero_title: "¿Llueve en tu ciudad?",
@@ -215,7 +211,6 @@ const LANGUAGES = {
 
   pt: {
     flag: "🇧🇷", name: "Português",
-    // Inspirado na alegria de viver brasileira e na saudade do sol
     slogan: "O sol nunca some. Ele só te espera um pouco mais longe.",
     tagline: "Encontre bom tempo perto de você",
     hero_title: "Está chovendo aí?",
@@ -266,7 +261,6 @@ const LANGUAGES = {
 
   it: {
     flag: "🇮🇹", name: "Italiano",
-    // Ispirato alla dolce vita, al sole mediterraneo e all'amore per il bello
     slogan: "La dolce vita non aspetta la pioggia. Il sole è già lì fuori.",
     tagline: "Trova il bel tempo vicino a te",
     hero_title: "Piove da te?",
@@ -317,7 +311,6 @@ const LANGUAGES = {
 
   nl: {
     flag: "🇳🇱", name: "Nederlands",
-    // Geïnspireerd door nuchterheid, poldergeest en de Nederlandse liefde voor fietsen buiten
     slogan: "Regen? Prima. Maar twintig minuten rijden en het is droog.",
     tagline: "Vind mooi weer bij jou in de buurt",
     hero_title: "Regent het bij jou?",
@@ -368,7 +361,6 @@ const LANGUAGES = {
 
   ja: {
     flag: "🇯🇵", name: "日本語",
-    // 日本の「晴耕雨読」精神と外出文化にインスパイアされたスローガン
     slogan: "雨の日でも、20分先には青空がある。",
     tagline: "近くの晴れ間を見つけよう",
     hero_title: "今、雨が降っていますか？",
@@ -419,7 +411,6 @@ const LANGUAGES = {
 
   ko: {
     flag: "🇰🇷", name: "한국어",
-    // 한국인의 야외 활동 사랑과 '나들이' 문화에서 영감을 받은 슬로건
     slogan: "비 오는 날도, 20분이면 맑은 하늘 아래에 있을 수 있어요.",
     tagline: "가까운 맑은 날씨를 찾아보세요",
     hero_title: "지금 비가 오나요?",
@@ -470,7 +461,6 @@ const LANGUAGES = {
 
   hi: {
     flag: "🇮🇳", name: "हिन्दी",
-    // भारत की मानसून संस्कृति और धूप के प्रति प्रेम से प्रेरित
     slogan: "बारिश रुकने का इंतज़ार क्यों? धूप तो 20 मिनट दूर है।",
     tagline: "अपने पास अच्छा मौसम खोजें",
     hero_title: "क्या आपके यहाँ बारिश हो रही है?",
@@ -521,7 +511,6 @@ const LANGUAGES = {
 
   ar: {
     flag: "🇸🇦", name: "العربية",
-    // مستوحى من ثقافة الاستمتاع بالطقس المعتدل والرحلات العائلية
     slogan: "المطر لا يمنع المغامرة. الشمس تنتظرك على بُعد عشرين دقيقة.",
     tagline: "اعثر على طقس جميل بالقرب منك",
     hero_title: "هل تمطر عندك الآن؟",
@@ -572,7 +561,6 @@ const LANGUAGES = {
 
   id: {
     flag: "🇮🇩", name: "Bahasa Indonesia",
-    // Terinspirasi dari semangat petualangan Indonesia dan budaya wisata lokal
     slogan: "Hujan bukan halangan. Matahari menunggu 20 menit dari sini.",
     tagline: "Temukan cuaca cerah di dekatmu",
     hero_title: "Sedang hujan di tempatmu?",
@@ -627,16 +615,12 @@ const LANGUAGES = {
 // ═══════════════════════════════════════════════════════════════
 const detectLang = () => {
   const supported = Object.keys(LANGUAGES);
-  // 1. URL param ?lang=xx
   const urlParam = new URLSearchParams(window.location.search).get("lang");
   if (urlParam && supported.includes(urlParam)) return urlParam;
-  // 2. localStorage
   const stored = localStorage.getItem("aeria_lang");
   if (stored && supported.includes(stored)) return stored;
-  // 3. Navigator language
   const nav = (navigator.language || navigator.userLanguage || "fr").split("-")[0].toLowerCase();
   if (supported.includes(nav)) return nav;
-  // 4. Fallback
   return "fr";
 };
 
@@ -687,7 +671,88 @@ const ringPoints=(lat,lon,radiusKm,count=16)=>{
   return pts;
 };
 const distKm=(a,b,c,d)=>{const R=6371,dL=((c-a)*Math.PI)/180,dG=((d-b)*Math.PI)/180,x=Math.sin(dL/2)**2+Math.cos((a*Math.PI)/180)*Math.cos((c*Math.PI)/180)*Math.sin(dG/2)**2;return R*2*Math.atan2(Math.sqrt(x),Math.sqrt(1-x));};
-const reverseGeocode=async(lat,lon,lang="fr")=>{try{const r=await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json&accept-language=${lang}&zoom=10`);const d=await r.json();if(d&&d.address){const a=d.address;const city=a.city||a.town||a.village||a.municipality||a.county||a.hamlet||a.suburb||"";const region=a.state||a.region||a.country||"";return city+(region&&city?", "+region:region);}}catch{}return null;};
+
+// ═══════════════════════════════════════════════════════════════
+// 🌍 REVERSE GEOCODE — Trouve TOUJOURS une ville logique
+// Stratégie : Nominatim → Open-Meteo multi-rayon (30/60/100km) → cache
+// Gère : mer ouverte, îles isolées, montagne, désert, zones rurales
+// ═══════════════════════════════════════════════════════════════
+const reverseGeocode = async (lat, lon, lang = "fr") => {
+  // 1️⃣ CACHE navigateur — évite de re-questionner les mêmes coordonnées
+  const cacheKey = `aeria_geo_${lat.toFixed(2)}_${lon.toFixed(2)}_${lang}`;
+  try {
+    const cached = localStorage.getItem(cacheKey);
+    if (cached) return cached === "__NULL__" ? null : cached;
+  } catch {}
+
+  // 2️⃣ ESSAI Nominatim au point exact (rapide, précis sur terre)
+  try {
+    const r = await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json&accept-language=${lang}&zoom=10`);
+    const d = await r.json();
+    if (d && d.address) {
+      const a = d.address;
+      const city = a.city || a.town || a.village || a.municipality || a.county || a.hamlet || a.suburb || "";
+      const region = a.state || a.region || a.country || "";
+      if (city) {
+        const result = city + (region ? ", " + region : "");
+        try { localStorage.setItem(cacheKey, result); } catch {}
+        return result;
+      }
+    }
+  } catch {}
+
+  // 3️⃣ FALLBACK Open-Meteo Geocoding — recherche villes habitées dans rayon croissant
+  // Le point exact n'a pas de ville (mer, montagne, désert) → on cherche autour
+  const searchRadii = [30, 60, 100]; // km
+  for (const radiusKm of searchRadii) {
+    try {
+      // Calcul bounding box autour du point
+      const latDelta = radiusKm / 111;
+      const lonDelta = radiusKm / (111 * Math.cos(lat * Math.PI / 180));
+      const latMin = lat - latDelta;
+      const latMax = lat + latDelta;
+      const lonMin = lon - lonDelta;
+      const lonMax = lon + lonDelta;
+
+      // Nominatim search avec viewbox pour ne chercher que dans la zone
+      const url = `https://nominatim.openstreetmap.org/search?format=json&addressdetails=1&limit=15&accept-language=${lang}&viewbox=${lonMin},${latMax},${lonMax},${latMin}&bounded=1&featuretype=city`;
+      const r = await fetch(url);
+      const d = await r.json();
+
+      if (Array.isArray(d) && d.length > 0) {
+        // Trouver la ville la plus proche parmi les résultats
+        let best = null;
+        let bestDist = Infinity;
+
+        for (const place of d) {
+          const pLat = parseFloat(place.lat);
+          const pLon = parseFloat(place.lon);
+          const dKm = distKm(lat, lon, pLat, pLon);
+
+          if (dKm <= radiusKm && dKm < bestDist) {
+            const a = place.address || {};
+            const city = a.city || a.town || a.village || a.municipality || a.hamlet || (place.display_name?.split(",")[0]?.trim()) || "";
+            if (city) {
+              bestDist = dKm;
+              const region = a.state || a.region || a.country || "";
+              best = city + (region ? ", " + region : "");
+            }
+          }
+        }
+
+        if (best) {
+          try { localStorage.setItem(cacheKey, best); } catch {}
+          return best;
+        }
+      }
+    } catch {}
+  }
+
+  // 4️⃣ ÉCHEC TOTAL — cache le null pour éviter de re-essayer
+  try { localStorage.setItem(cacheKey, "__NULL__"); } catch {}
+  return null;
+};
+
 const forwardGeocode=async(q,lang="fr")=>{const r=await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(q)}&count=5&language=${lang}`);const d=await r.json();return d.results||[];};
 const fetchWeatherBatch=async(points)=>{const lats=points.map(p=>p.lat.toFixed(4)).join(","),lons=points.map(p=>p.lon.toFixed(4)).join(",");const url=`https://api.open-meteo.com/v1/forecast?latitude=${lats}&longitude=${lons}&current=temperature_2m,weather_code,cloud_cover,wind_speed_10m,precipitation&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_sum,sunshine_duration&timezone=auto&forecast_days=1`;const r=await fetch(url);const d=await r.json();return Array.isArray(d)?d:[d];};
 const fetchElevation=async(lat,lon)=>{try{const r=await fetch(`https://api.open-meteo.com/v1/elevation?latitude=${lat}&longitude=${lon}`);const d=await r.json();return d.elevation?.[0]??0;}catch{return 0;}};
@@ -755,7 +820,6 @@ export default function App() {
 
   useEffect(()=>{localStorage.setItem("aeria_lang",lang);setResults([]);setOriginWx(null);setError("");},[lang]);
 
-  // Relance automatique quand on change le rayon (si une position est déjà active)
   useEffect(()=>{
     if(lastPos){
       console.log("[Aeria] Radius changed, auto-relaunching search at:",radius,"km");
@@ -792,9 +856,16 @@ export default function App() {
       const top=await Promise.all(away.map(async(p)=>{
         const[placeName,elev]=await Promise.all([reverseGeocode(p.lat,p.lon,lang),fetchElevation(p.lat,p.lon)]);
         const terrain=inferTerrain(elev,lang);
-        return{...p,placeName:placeName||`${p.direction} — ${p.dist.toFixed(0)} km`,terrain};
+        // ✅ FIX : si reverseGeocode trouve rien, on garde le point mais on cache la direction technique
+        // Au lieu de "N — 75 km", on affiche "Destination à 75 km" (plus naturel pour l'utilisateur)
+        const fallbackName = placeName || `${L.terrain.coast.split(' ')[0]} · ${p.dist.toFixed(0)} km`;
+        return{...p,placeName:placeName||fallbackName,terrain,hasRealName:!!placeName};
       }));
-      clearInterval(iv);setResults(top);setLoading(false);
+      // ✅ FILTRAGE : on garde uniquement les destinations avec un vrai nom de ville
+      const filtered = top.filter(r => r.hasRealName);
+      // Si après filtrage on a moins de 3 résultats, on garde aussi les fallbacks pour ne pas avoir un écran vide
+      const finalTop = filtered.length >= 3 ? filtered : top;
+      clearInterval(iv);setResults(finalTop);setLoading(false);
     }catch{clearInterval(iv);setError(L.error_msg);setLoading(false);}
   };
 
@@ -859,12 +930,10 @@ export default function App() {
 
       {/* HEADER */}
       <div style={S.header}>
-        {/* Lang picker top right */}
         <div style={{display:"flex",justifyContent:"flex-end",marginBottom:16,paddingRight:4}}>
           <LangPicker current={lang} onChange={setLang}/>
         </div>
 
-        {/* Logo Aéria boussole */}
         <div style={{display:"flex",flexDirection:"column",alignItems:"center",gap:10,marginBottom:6}}>
           <svg width="240" height="240" viewBox="0 0 500 500" fill="none" style={{filter:"drop-shadow(0 0 40px rgba(196,181,253,0.15))"}}>
             <defs>
@@ -874,22 +943,17 @@ export default function App() {
               <linearGradient id="bhDark" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#8b7fb8" stopOpacity="0.95"/><stop offset="100%" stopColor="#3d2563" stopOpacity="0.9"/></linearGradient>
               <radialGradient id="cHub" cx="35%" cy="30%" r="70%"><stop offset="0%" stopColor="#ffffff"/><stop offset="25%" stopColor="#e0d4ff"/><stop offset="65%" stopColor="#7c3aed"/><stop offset="100%" stopColor="#1a1a2e"/></radialGradient>
             </defs>
-            {/* Cercles extérieurs */}
             <circle cx="250" cy="250" r="245" fill="none" stroke="#ffffff" strokeWidth="1.4" opacity="1"/>
             <circle cx="250" cy="250" r="238" fill="none" stroke="#ffffff" strokeWidth="0.6" opacity="0.55"/>
-            {/* Graduations 5° */}
             {Array.from({length:36},(_,i)=>i*10+5).map(deg=>(
               <line key={`f${deg}`} x1="250" y1="7" x2="250" y2="14" stroke="#ffffff" strokeWidth="0.4" opacity="0.55" transform={`rotate(${deg} 250 250)`}/>
             ))}
-            {/* Graduations 10° (sauf 30°) */}
             {[10,20,40,50,70,80,100,110,130,140,160,170,190,200,220,230,250,260,280,290,310,320,340,350].map(deg=>(
               <line key={`m${deg}`} x1="250" y1="7" x2="250" y2="18" stroke="#ffffff" strokeWidth="0.8" opacity="0.85" transform={`rotate(${deg} 250 250)`}/>
             ))}
-            {/* Graduations 30° (longues) */}
             {[0,30,60,90,120,150,180,210,240,270,300,330].map(deg=>(
               <line key={`l${deg}`} x1="250" y1="7" x2="250" y2="24" stroke="#ffffff" strokeWidth="1.4" opacity="1" transform={`rotate(${deg} 250 250)`}/>
             ))}
-            {/* Chiffres degrés */}
             <g fontFamily="'DM Sans',sans-serif" fontSize="13" fontWeight="600" fill="#ffffff" opacity="0.9" textAnchor="middle" dominantBaseline="middle">
               <text x="250" y="39">0</text>
               <text x="362" y="69" transform="rotate(30 362 69)">30</text>
@@ -904,25 +968,20 @@ export default function App() {
               <text x="69" y="138" transform="rotate(300 69 138)">300</text>
               <text x="138" y="69" transform="rotate(330 138 69)">330</text>
             </g>
-            {/* Cercle séparateur */}
             <circle cx="250" cy="250" r="215" fill="none" stroke="#ffffff" strokeWidth="0.8" opacity="0.7"/>
-            {/* Petits losanges aux inter-cardinaux */}
             <g fill="#ffffff" opacity="0.55">
               <polygon points="377,118 382,123 377,128 372,123"/>
               <polygon points="377,372 382,377 377,382 372,377"/>
               <polygon points="123,372 128,377 123,382 118,377"/>
               <polygon points="123,118 128,123 123,128 118,123"/>
             </g>
-            {/* Lettres cardinales N/E/S/W */}
             <g fontFamily="'DM Sans',sans-serif" fontWeight="800" fill="#ffffff" textAnchor="middle" dominantBaseline="middle">
               <text x="250" y="70" fontSize="46">N</text>
               <text x="430" y="250" fontSize="40">E</text>
               <text x="250" y="430" fontSize="40">S</text>
               <text x="70" y="250" fontSize="40">W</text>
             </g>
-            {/* Cercle interne */}
             <circle cx="250" cy="250" r="145" fill="none" stroke="#ffffff" strokeWidth="0.6" opacity="0.45"/>
-            {/* Branches diagonales */}
             <polygon points="321,179 250,250 244,244" fill="#d8d0f0" opacity="0.85"/>
             <polygon points="321,179 250,250 256,256" fill="#5d4a8a" opacity="0.75"/>
             <polygon points="321,321 250,250 256,244" fill="#d8d0f0" opacity="0.85"/>
@@ -931,7 +990,6 @@ export default function App() {
             <polygon points="179,321 250,250 244,244" fill="#5d4a8a" opacity="0.75"/>
             <polygon points="179,179 250,250 244,256" fill="#d8d0f0" opacity="0.85"/>
             <polygon points="179,179 250,250 256,244" fill="#5d4a8a" opacity="0.75"/>
-            {/* Branches principales */}
             <polygon points="250,105 250,250 238,238" fill="url(#bvLight)"/>
             <polygon points="250,105 250,250 262,238" fill="url(#bvDark)"/>
             <polygon points="250,395 250,250 262,262" fill="url(#bvLight)"/>
@@ -940,14 +998,12 @@ export default function App() {
             <polygon points="395,250 250,250 262,262" fill="url(#bhDark)"/>
             <polygon points="105,250 250,250 238,262" fill="url(#bhLight)"/>
             <polygon points="105,250 250,250 238,238" fill="url(#bhDark)"/>
-            {/* Fleur de lys au-dessus du Nord */}
             <g transform="translate(250, 95)" opacity="0.95">
               <path d="M 0,-14 L 4,-4 L 0,2 L -4,-4 Z" fill="#ffffff"/>
               <path d="M -2,-2 Q -10,-8 -8,-14 Q -4,-8 -2,-2 Z" fill="#ffffff" opacity="0.85"/>
               <path d="M 2,-2 Q 10,-8 8,-14 Q 4,-8 2,-2 Z" fill="#ffffff" opacity="0.85"/>
               <ellipse cx="0" cy="2" rx="6" ry="1.2" fill="#ffffff"/>
             </g>
-            {/* Moyeu central */}
             <circle cx="250" cy="250" r="18" fill="url(#cHub)"/>
             <circle cx="250" cy="250" r="18" fill="none" stroke="#ffffff" strokeWidth="0.8" opacity="0.9"/>
             <circle cx="250" cy="250" r="6" fill="#1a1a2e"/>
@@ -956,7 +1012,6 @@ export default function App() {
           <div style={S.logo}>Aéria</div>
         </div>
 
-        {/* Slogan culturel unique par langue */}
         <div style={{fontSize:22,color:"rgba(255,255,255,0.92)",fontStyle:"italic",fontWeight:300,maxWidth:520,margin:"0 auto 14px",lineHeight:1.45,padding:"0 16px",letterSpacing:"0.2px"}}>
           "{L.slogan}"
         </div>
@@ -1012,10 +1067,8 @@ export default function App() {
           </div>
         </div>
 
-        {/* AD BANNER 1 */}
         <AdBanner partner={L.partners[0]} label={L.partner_label}/>
 
-        {/* LOADING */}
         {loading&&(
           <div style={{display:"flex",flexDirection:"column",alignItems:"center",padding:"40px 0"}} className="fade-up">
             <div style={{width:56,height:56,border:"4px solid #E5E7EB",borderTop:"4px solid #533483",borderRadius:"50%",animation:"spin 0.9s linear infinite"}}/>
@@ -1025,7 +1078,6 @@ export default function App() {
 
         {error&&!loading&&(<div style={{background:"#FEE2E2",border:"1px solid #FCA5A5",borderRadius:14,padding:16,color:"#991B1B",fontSize:15,marginBottom:16}} className="fade-up">⚠️ {error}</div>)}
 
-        {/* ORIGIN WEATHER */}
         {originWx&&!loading&&(
           <div style={S.originCard} className="fade-up">
             <div style={{fontSize:12,letterSpacing:"0.1em",textTransform:"uppercase",color:"rgba(255,255,255,0.6)",marginBottom:4}}>{L.origin_label}</div>
@@ -1046,7 +1098,6 @@ export default function App() {
           </div>
         )}
 
-        {/* RESULTS */}
         {results.length>0&&!loading&&(
           <>
             <div style={{fontSize:20,fontWeight:800,color:"#1E293B",marginBottom:14,marginTop:4}}>🎯 {L.results_title}</div>
@@ -1109,15 +1160,11 @@ export default function App() {
           </>
         )}
 
-        {/* EMPTY STATE / HOW IT WORKS */}
         {!originWx&&!loading&&!error&&(
           <div className="fade-up">
-            {/* Hero avec boussole Marine Vintage */}
             <div style={{background:"radial-gradient(ellipse at top, #1e2749 0%, #0a0e27 50%, #05071a 100%)",borderRadius:24,padding:"40px 24px 32px",textAlign:"center",marginBottom:16,position:"relative",overflow:"hidden"}}>
-              {/* Halo lumineux d'arrière-plan */}
               <div style={{position:"absolute",top:"50%",left:"50%",transform:"translate(-50%,-65%)",width:340,height:340,background:"radial-gradient(circle, rgba(200,220,255,0.08) 0%, transparent 70%)",borderRadius:"50%",pointerEvents:"none"}}/>
 
-              {/* Boussole SVG */}
               <div style={{display:"flex",justifyContent:"center",alignItems:"center",marginBottom:24,position:"relative"}}>
                 <svg viewBox="0 0 500 500" width="240" height="240" xmlns="http://www.w3.org/2000/svg" style={{filter:"drop-shadow(0 0 30px rgba(200, 220, 255, 0.15))"}}>
                   <defs>
@@ -1127,28 +1174,23 @@ export default function App() {
                     <linearGradient id="bh-d" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#8590b0"/><stop offset="100%" stopColor="#3d4668"/></linearGradient>
                     <radialGradient id="hub" cx="35%" cy="30%" r="70%"><stop offset="0%" stopColor="#ffffff"/><stop offset="25%" stopColor="#e8ecf5"/><stop offset="65%" stopColor="#7a86a8"/><stop offset="100%" stopColor="#2d3354"/></radialGradient>
                   </defs>
-                  {/* Cercles extérieurs */}
                   <circle cx="250" cy="250" r="245" fill="none" stroke="#ffffff" strokeWidth="1.4"/>
                   <circle cx="250" cy="250" r="238" fill="none" stroke="#ffffff" strokeWidth="0.6" opacity="0.55"/>
-                  {/* Graduations 5° */}
                   <g stroke="#ffffff" strokeWidth="0.4" opacity="0.55">
                     {[5,15,25,35,45,55,65,75,85,95,105,115,125,135,145,155,165,175,185,195,205,215,225,235,245,255,265,275,285,295,305,315,325,335,345,355].map(d=>(
                       <line key={d} x1="250" y1="7" x2="250" y2="14" transform={`rotate(${d} 250 250)`}/>
                     ))}
                   </g>
-                  {/* Graduations 10° */}
                   <g stroke="#ffffff" strokeWidth="0.8" opacity="0.85">
                     {[10,20,40,50,70,80,100,110,130,140,160,170,190,200,220,230,250,260,280,290,310,320,340,350].map(d=>(
                       <line key={d} x1="250" y1="7" x2="250" y2="18" transform={`rotate(${d} 250 250)`}/>
                     ))}
                   </g>
-                  {/* Graduations 30° */}
                   <g stroke="#ffffff" strokeWidth="1.4">
                     {[0,30,60,90,120,150,180,210,240,270,300,330].map(d=>(
                       <line key={d} x1="250" y1="7" x2="250" y2="24" transform={`rotate(${d} 250 250)`}/>
                     ))}
                   </g>
-                  {/* Chiffres degrés */}
                   <g fontFamily="serif" fontSize="11" fontWeight="500" fill="#ffffff" opacity="0.9" textAnchor="middle" dominantBaseline="middle">
                     <text x="250" y="39">0</text>
                     <text x="362" y="69" transform="rotate(30 362 69)">30</text>
@@ -1163,25 +1205,20 @@ export default function App() {
                     <text x="69" y="138" transform="rotate(300 69 138)">300</text>
                     <text x="138" y="69" transform="rotate(330 138 69)">330</text>
                   </g>
-                  {/* Cercle séparateur */}
                   <circle cx="250" cy="250" r="215" fill="none" stroke="#ffffff" strokeWidth="0.8" opacity="0.7"/>
-                  {/* Losanges inter-cardinaux */}
                   <g fill="#ffffff" opacity="0.55">
                     <polygon points="377,118 382,123 377,128 372,123"/>
                     <polygon points="377,372 382,377 377,382 372,377"/>
                     <polygon points="123,372 128,377 123,382 118,377"/>
                     <polygon points="123,118 128,123 123,128 118,123"/>
                   </g>
-                  {/* Lettres cardinales */}
                   <g fontFamily="serif" fontWeight="700" fill="#ffffff" textAnchor="middle" dominantBaseline="middle">
                     <text x="250" y="70" fontSize="44">N</text>
                     <text x="430" y="250" fontSize="38">E</text>
                     <text x="250" y="430" fontSize="38">S</text>
                     <text x="70" y="250" fontSize="38">W</text>
                   </g>
-                  {/* Cercle interne */}
                   <circle cx="250" cy="250" r="145" fill="none" stroke="#ffffff" strokeWidth="0.6" opacity="0.45"/>
-                  {/* Branches diagonales */}
                   <polygon points="321,179 250,250 244,244" fill="#d8dee8" opacity="0.85"/>
                   <polygon points="321,179 250,250 256,256" fill="#6b7594" opacity="0.75"/>
                   <polygon points="321,321 250,250 256,244" fill="#d8dee8" opacity="0.85"/>
@@ -1190,7 +1227,6 @@ export default function App() {
                   <polygon points="179,321 250,250 244,244" fill="#6b7594" opacity="0.75"/>
                   <polygon points="179,179 250,250 244,256" fill="#d8dee8" opacity="0.85"/>
                   <polygon points="179,179 250,250 256,244" fill="#6b7594" opacity="0.75"/>
-                  {/* Branches principales */}
                   <polygon points="250,105 250,250 238,238" fill="url(#bv-l)"/>
                   <polygon points="250,105 250,250 262,238" fill="url(#bv-d)"/>
                   <polygon points="250,395 250,250 262,262" fill="url(#bv-l)"/>
@@ -1199,36 +1235,30 @@ export default function App() {
                   <polygon points="395,250 250,250 262,262" fill="url(#bh-d)"/>
                   <polygon points="105,250 250,250 238,262" fill="url(#bh-l)"/>
                   <polygon points="105,250 250,250 238,238" fill="url(#bh-d)"/>
-                  {/* Fleur de lys */}
                   <g transform="translate(250, 95)" opacity="0.95">
                     <path d="M 0,-14 L 4,-4 L 0,2 L -4,-4 Z" fill="#ffffff"/>
                     <path d="M -2,-2 Q -10,-8 -8,-14 Q -4,-8 -2,-2 Z" fill="#ffffff" opacity="0.85"/>
                     <path d="M 2,-2 Q 10,-8 8,-14 Q 4,-8 2,-2 Z" fill="#ffffff" opacity="0.85"/>
                     <ellipse cx="0" cy="2" rx="6" ry="1.2" fill="#ffffff"/>
                   </g>
-                  {/* Moyeu */}
                   <circle cx="250" cy="250" r="18" fill="url(#hub)"/>
                   <circle cx="250" cy="250" r="18" fill="none" stroke="#ffffff" strokeWidth="0.8" opacity="0.9"/>
                   <circle cx="250" cy="250" r="6" fill="#0a0e27"/>
                 </svg>
               </div>
 
-              {/* Slogan principal — bien visible */}
               <div style={{fontSize:18,fontWeight:300,fontStyle:"italic",color:"#fff",lineHeight:1.4,marginBottom:20,maxWidth:320,margin:"0 auto 20px",letterSpacing:"0.3px"}}>
                 {L.slogan}
               </div>
 
-              {/* Titre principal */}
               <div style={{fontSize:24,fontWeight:800,color:"#fff",lineHeight:1.3,marginBottom:12}}>
                 {L.hero_title}<br/>
                 <span style={{color:"#c4b5fd"}}>{L.hero_sub}</span>
               </div>
 
-              {/* Description */}
               <div style={{fontSize:14,color:"rgba(255,255,255,0.75)",lineHeight:1.7,maxWidth:300,margin:"0 auto"}}>{L.hero_desc}</div>
             </div>
 
-            {/* Steps */}
             <div style={{...S.card,padding:"40px 32px",marginBottom:16}}>
               <div style={{fontSize:26,fontWeight:700,color:"#1E293B",marginBottom:32,textAlign:"center",letterSpacing:"-0.3px"}}>{L.how_title}</div>
               {L.steps.map((s,i)=>(
@@ -1281,7 +1311,6 @@ export default function App() {
               ))}
             </div>
 
-            {/* Destinations */}
             <div style={{...S.card,padding:"32px 24px",marginBottom:16}}>
               <div style={{fontSize:14,fontWeight:800,color:"#94a3b8",marginBottom:24,textAlign:"center",letterSpacing:"3px",textTransform:"uppercase"}}>{L.results_title || "Destinations"}</div>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>
@@ -1384,9 +1413,7 @@ export default function App() {
               </div>
             </div>
 
-            {/* CTA final — Manifeste éditorial */}
             <div style={{background:"linear-gradient(135deg,#1a1a2e 0%,#16213e 35%,#0f3460 65%,#533483 100%)",borderRadius:24,padding:"56px 32px",textAlign:"center",marginBottom:16,position:"relative",overflow:"hidden"}}>
-              {/* Halo lumineux décoratif */}
               <div style={{position:"absolute",top:"-30%",left:"50%",transform:"translateX(-50%)",width:"120%",height:"100%",background:"radial-gradient(ellipse at center, rgba(196,181,253,0.15) 0%, transparent 60%)",pointerEvents:"none"}}/>
               <div style={{position:"relative",zIndex:1}}>
                 <div style={{fontFamily:"'Cormorant Garamond', Georgia, serif",fontSize:32,fontWeight:400,fontStyle:"italic",color:"#fff",lineHeight:1.25,marginBottom:6,letterSpacing:"-0.5px"}}>{L.cta_final}</div>
@@ -1399,7 +1426,6 @@ export default function App() {
           </div>
         )}
 
-        {/* FOOTER */}
         <div style={{textAlign:"center",fontSize:12,color:"#94A3B8",marginTop:8,lineHeight:1.8}}>
           <div style={{fontWeight:700,color:"#533483",fontSize:14,marginBottom:4}}>Aéria</div>
           <div>Open-Meteo · CC BY 4.0</div>
